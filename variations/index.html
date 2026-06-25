@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Homepage Variations</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#F6F3EA;--text:#3B2F24;--mut:#7A6B5A;--gold:#9E7C39;--line:rgba(59,47,36,.16);--ser:'Playfair Display',serif;--sans:'Jost',sans-serif}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+  .eye{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+  h1,h2,h3{font-family:var(--ser);font-weight:400;line-height:1.1}
+  .head{text-align:center;padding:64px 40px 30px}
+  .head h1{font-size:clamp(34px,5vw,58px);margin:14px 0}
+  .head p{color:var(--mut);max-width:600px;margin:0 auto}
+  .grouph{max-width:1200px;margin:48px auto 18px;padding:0 40px;border-bottom:1px solid var(--line)}
+  .grouph h2{font-size:24px;padding-bottom:10px}
+  .grouph span{font-size:12px;color:var(--mut);letter-spacing:.04em}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:10px}
+  .vcard{border:1px solid var(--line);background:#FCFAF4;overflow:hidden;display:flex;flex-direction:column;transition:.4s}
+  .vcard:hover{border-color:var(--text);transform:translateY(-3px)}
+  .vcard .sw{height:128px;display:flex}.vcard .sw i{flex:1;height:100%}
+  .vcard .body{padding:22px 24px}
+  .vcard .num{font-family:var(--ser);font-style:italic;color:var(--gold);font-size:15px}
+  .vcard h3{font-size:23px;margin:5px 0 8px}
+  .vcard p{font-size:13px;color:var(--mut);line-height:1.65;min-height:54px}
+  .vcard .go{margin-top:14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--text);display:inline-block;padding-bottom:3px}
+  .live{text-align:center;padding:46px 40px}
+  .live a{font-size:12px;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--text);padding:14px 30px;display:inline-block;transition:.3s}
+  .live a:hover{background:var(--text);color:var(--bg)}
+  @media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="head">
+  <p class="eye">INTIARA · Design exploration</p>
+  <h1>Homepage directions</h1>
+  <p>Two sets. The first explores range; the second hugs the brand brief — strict Marfil / Chocolate / Dorado, quiet contemporary luxury, the Desire → Story → Materials → Collection → Values narrative, and the interlocking IA logo.</p>
+</div>
+
+<div class="grouph"><h2>Set B · Brief-aligned <span>— on-palette, on-narrative, updated logo</span></h2></div>
+<div class="wrap"><div class="grid">
+  <a class="vcard" href="v6-editorial-fullbleed.html">
+    <div class="sw"><i style="background:#2C2219"></i><i style="background:#C8A95A"></i><i style="background:#EEEADC"></i></div>
+    <div class="body"><span class="num">06</span><h3>Editorial Full-bleed</h3><p>Full-screen image hero with overlaid statement, then the full brief narrative. Magazine-cover impact.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v7-centered-editorial.html">
+    <div class="sw"><i style="background:#EEEADC"></i><i style="background:#C8A95A"></i><i style="background:#3B2F24"></i></div>
+    <div class="body"><span class="num">07</span><h3>Centered Editorial</h3><p>Symmetrical, generous whitespace, gold hairlines and ornaments. Contemporary, not heritage.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v8-left-rail.html">
+    <div class="sw"><i style="background:#F6F3EA"></i><i style="background:#3B2F24"></i><i style="background:#C8A95A"></i></div>
+    <div class="body"><span class="num">08</span><h3>Left Rail</h3><p>Fixed sidebar with logo and nav, content scrolls beside it. Architectural and quiet.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v9-type-first.html">
+    <div class="sw"><i style="background:#F6F3EA"></i><i style="background:#C8A95A"></i><i style="background:#2C2219"></i></div>
+    <div class="body"><span class="num">09</span><h3>Type-first</h3><p>An imageless, purely typographic hero — maximum restraint, the words carry it. The most editorial.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="../index.html">
+    <div class="sw"><i style="background:#F6F3EA"></i><i style="background:#C8A95A"></i><i style="background:#3B2F24"></i></div>
+    <div class="body"><span class="num">★</span><h3>Current build</h3><p>The full multi-page site as it stands — the agreed direction. Split hero, all pages, cart, EN/ES.</p><span class="go">Open the live site →</span></div>
+  </a>
+</div></div>
+
+<div class="grouph"><h2>Set A · Exploratory <span>— wider range of moods</span></h2></div>
+<div class="wrap"><div class="grid">
+  <a class="vcard" href="v1-editorial-noir.html">
+    <div class="sw"><i style="background:#241B14"></i><i style="background:#C8A95A"></i><i style="background:#1B140E"></i></div>
+    <div class="body"><span class="num">01</span><h3>Editorial Noir</h3><p>Dark chocolate, gold accents, dramatic centred serif. The boldest.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v2-quiet-minimal.html">
+    <div class="sw"><i style="background:#F7F4EC"></i><i style="background:#EFEADF"></i><i style="background:#2E2823"></i></div>
+    <div class="body"><span class="num">02</span><h3>Quiet Minimal</h3><p>Gallery white, vast whitespace, thin type. The most understated.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v3-gold-maison.html">
+    <div class="sw"><i style="background:#F6F1E6"></i><i style="background:#B08A4F"></i><i style="background:#EFE7D6"></i></div>
+    <div class="body"><span class="num">03</span><h3>Gold Maison</h3><p>Symmetrical, engraved Cinzel caps, gold seal. Classic heritage register.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v4-split-modern.html">
+    <div class="sw"><i style="background:#332A20"></i><i style="background:#E7DFCE"></i><i style="background:#C8A95A"></i></div>
+    <div class="body"><span class="num">04</span><h3>Split Modern</h3><p>Architectural split-screen, contemporary type, material marquee.</p><span class="go">Open →</span></div>
+  </a>
+  <a class="vcard" href="v5-warm-terracotta.html">
+    <div class="sw"><i style="background:#6e4a36"></i><i style="background:#A85B36"></i><i style="background:#EADCC6"></i></div>
+    <div class="body"><span class="num">05</span><h3>Warm Terracotta</h3><p>Image-led hero, warm earthen accent. The warmest — adds a colour beyond the brand trio.</p><span class="go">Open →</span></div>
+  </a>
+</div></div>
+
+<div class="live"><a href="../index.html">← Back to the live INTIARA site</a></div>
+</body>
+</html>

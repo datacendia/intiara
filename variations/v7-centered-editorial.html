@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Variation 7 · Centered Editorial</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--marfil:#F6F3EA;--marfil2:#EEEADC;--choco:#3B2F24;--choco2:#2C2219;--gold:#C8A95A;--goldD:#9E7C39;--mut:#7A6B5A;--line:rgba(59,47,36,.16);--ser:'Playfair Display',serif;--sans:'Jost',sans-serif}
+  body{background:var(--marfil);color:var(--choco);font-family:var(--sans);font-weight:300;line-height:1.7}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 40px}
+  .eye{font-size:10.5px;letter-spacing:.36em;text-transform:uppercase;color:var(--goldD)}
+  h1,h2,h3{font-family:var(--ser);font-weight:400;line-height:1.1}
+  .btn{display:inline-block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:15px 36px;border:1px solid var(--choco);transition:.4s}
+  .btn:hover{background:var(--choco);color:var(--marfil)}
+  header{display:flex;align-items:center;justify-content:space-between;padding:24px 40px;border-bottom:1px solid var(--line)}
+  header .brand{display:flex;align-items:center;gap:11px}
+  header .mark{font-family:var(--ser);font-size:22px;letter-spacing:.36em;text-transform:uppercase}
+  header nav a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-left:26px;color:var(--mut)}
+  header nav a:hover{color:var(--choco)}
+  .orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);max-width:240px;margin:0 auto}
+  .orn::before,.orn::after{content:"";height:1px;background:var(--gold);flex:1;opacity:.55}
+  /* hero centered */
+  .hero{text-align:center;padding:80px 40px 64px}
+  .hero .eye{margin-bottom:22px}
+  .hero h1{font-size:clamp(40px,5.6vw,80px);max-width:900px;margin:0 auto}
+  .hero h1 em{font-style:italic;color:var(--goldD)}
+  .hero p{max-width:560px;margin:26px auto 32px;color:var(--mut)}
+  .hero .himg{max-width:720px;aspect-ratio:16/9;margin:48px auto 0;background:var(--marfil2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .hero .himg .w{opacity:.12;height:46%;color:var(--choco)}
+  .hero .himg .lab{position:absolute;bottom:14px;left:0;right:0;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--mut)}
+  /* statement */
+  .state{padding:90px 40px;text-align:center;background:var(--marfil2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .state p{font-family:var(--ser);font-style:italic;font-size:clamp(22px,3vw,36px);max-width:820px;margin:0 auto;line-height:1.4}
+  .state p em{color:var(--goldD)}
+  .sec{padding:96px 0}
+  .center{text-align:center;max-width:640px;margin:0 auto 52px}.center h2{font-size:clamp(30px,4vw,50px);margin-top:12px}.center p{color:var(--mut);margin-top:16px}
+  /* materials list centered */
+  .matlist{max-width:760px;margin:0 auto}
+  .matlist .m{display:grid;grid-template-columns:54px 1fr auto;gap:22px;align-items:baseline;padding:24px 0;border-top:1px solid var(--line)}
+  .matlist .m:last-child{border-bottom:1px solid var(--line)}
+  .matlist .m .n{font-family:var(--ser);font-style:italic;color:var(--gold);font-size:18px}
+  .matlist .m h3{font-size:22px}.matlist .m p{color:var(--mut);font-size:13.5px;text-align:right;max-width:280px}
+  /* collection */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .ph{background:var(--marfil2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .ph .w{opacity:.13;height:40%;color:var(--choco)}
+  .ph .lab{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}
+  .card .cph{aspect-ratio:4/5}.card .info{text-align:center;margin-top:16px}.card .nm{font-family:var(--ser);font-size:21px}.card .pr{font-size:13px;color:var(--mut);margin-top:3px}
+  .cfoot{text-align:center;margin-top:50px}
+  /* values */
+  .vals{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;text-align:center}
+  .vals .v .vn{font-family:var(--ser);font-style:italic;color:var(--goldD);font-size:15px}.vals .v h3{font-size:19px;margin:10px 0 8px}.vals .v p{font-size:13px;color:var(--mut)}
+  footer{text-align:center;padding:64px 40px;border-top:1px solid var(--line)}
+  footer .mark{font-family:var(--ser);font-size:22px;letter-spacing:.36em;text-transform:uppercase}
+  footer p{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-top:14px}
+  .vbadge{position:fixed;left:14px;bottom:14px;background:var(--choco);color:var(--marfil);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:7px 13px;z-index:30}
+  @media(max-width:820px){.grid,.vals{grid-template-columns:1fr 1fr}.matlist .m{grid-template-columns:40px 1fr}.matlist .m p{text-align:left;grid-column:2}header nav{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><g id="ia">
+<circle cx="54" cy="16" r="5.4" fill="currentColor"/><line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/><line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/><line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/><line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/><line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/><line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/><line x1="39" y1="104" x2="53" y2="104" stroke="currentColor" stroke-width="5"/><line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
+</g></defs></svg>
+<a class="vbadge" href="index.html">‹ Variations · 07 Centered Editorial (on-brief)</a>
+
+<header>
+  <div class="brand"><svg viewBox="0 0 133 120" width="26" height="23" fill="none" style="color:var(--choco)"><use href="#ia"/></svg><span class="mark">INTIARA</span></div>
+  <nav><a href="#">Story</a><a href="#">Materials</a><a href="#">Collection</a><a href="#">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <p class="eye">Contemporary luxury · Designer pieces</p>
+  <h1>Peru's finest materials, reimagined as <em>designer pieces</em>.</h1>
+  <p>INTIARA transforms alpaca, 950 silver and Andean opal into contemporary luxury — made in limited production.</p>
+  <a class="btn" href="#">Explore the collection</a>
+  <div class="himg"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Editorial · sophisticated woman · European setting</span></div>
+</section>
+
+<div class="state"><p>The richness of each piece is <em>discovered</em>, layer by layer.</p></div>
+
+<section class="sec wrap">
+  <div class="center"><div class="orn"><svg viewBox="0 0 133 120" width="22" height="20" fill="none" style="color:var(--gold)"><use href="#ia"/></svg></div><p class="eye" style="margin-top:14px">Materials & detail</p><h2>Noble by nature</h2></div>
+  <div class="matlist">
+    <div class="m"><span class="n">01</span><h3>Alpaca</h3><p>The softness of an exceptional fibre.</p></div>
+    <div class="m"><span class="n">02</span><h3>950 silver</h3><p>The nobility of Peruvian silver.</p></div>
+    <div class="m"><span class="n">03</span><h3>Andean opal</h3><p>A gem of Peruvian origin.</p></div>
+    <div class="m"><span class="n">04</span><h3>Alpaca tassels</h3><p>Beauty with purpose; responsibly sourced.</p></div>
+    <div class="m"><span class="n">05</span><h3>Woven interior</h3><p>Stories discovered within.</p></div>
+  </div>
+</section>
+
+<section class="sec wrap" style="background:var(--marfil2)">
+  <div class="center"><p class="eye">The collection</p><h2>A small, considered house</h2><p>Seven pieces, each with a certificate of origin.</p></div>
+  <div class="grid">
+    <a class="card"><div class="ph cph" style="background:#E5D8C0"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Inti</span></div><div class="info"><div class="nm">Inti</div><div class="pr">Tote · €480</div></div></a>
+    <a class="card"><div class="ph cph" style="background:#DFD1B8"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Mayu</span></div><div class="info"><div class="nm">Mayu</div><div class="pr">Bucket · €440</div></div></a>
+    <a class="card"><div class="ph cph" style="background:#E8DCC3"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Sumaq</span></div><div class="info"><div class="nm">Sumaq</div><div class="pr">Clutch · €320</div></div></a>
+  </div>
+  <div class="cfoot"><a class="btn" href="#">View the collection</a></div>
+</section>
+
+<section class="sec wrap">
+  <div class="center"><p class="eye">What INTIARA protects</p><h2>Four principles</h2></div>
+  <div class="vals">
+    <div class="v"><span class="vn">01</span><h3>Designer-led</h3><p>Identity of its own.</p></div>
+    <div class="v"><span class="vn">02</span><h3>Materials</h3><p>Alpaca · 950 silver · opal.</p></div>
+    <div class="v"><span class="vn">03</span><h3>Contemporary</h3><p>Quiet, timeless luxury.</p></div>
+    <div class="v"><span class="vn">04</span><h3>Responsible</h3><p>Limited production.</p></div>
+  </div>
+</section>
+
+<footer><div class="mark">INTIARA</div><p>Lujo contemporáneo con alma peruana</p></footer>
+</body>
+</html>

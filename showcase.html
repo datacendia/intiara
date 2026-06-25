@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Variations showcase</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--marfil:#F6F3EA;--marfil2:#E7E0CF;--choco:#2C2219;--gold:#C8A95A;--mut:rgba(246,243,234,.6);--ser:'Playfair Display',serif;--sans:'Jost',sans-serif}
+  html,body{height:100%}
+  body{font-family:var(--sans);font-weight:300;background:var(--marfil2);display:flex;flex-direction:column;height:100vh;overflow:hidden;color:var(--marfil)}
+  .bar{background:var(--choco);display:flex;align-items:center;gap:18px;padding:0 18px;height:60px;flex:0 0 auto}
+  .brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+  .brand svg{height:24px;width:auto;color:var(--gold)}
+  .brand .mk{font-family:var(--ser);font-size:18px;letter-spacing:.32em;text-transform:uppercase;color:var(--marfil)}
+  .tabs{display:flex;gap:6px;overflow-x:auto;flex:1 1 auto;height:100%;align-items:center;scrollbar-width:thin}
+  .tabs::-webkit-scrollbar{height:5px}.tabs::-webkit-scrollbar-thumb{background:rgba(246,243,234,.25);border-radius:3px}
+  .tab{flex:0 0 auto;background:transparent;border:1px solid rgba(246,243,234,.22);color:var(--mut);font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 13px;cursor:pointer;white-space:nowrap;transition:.25s;border-radius:4px}
+  .tab:hover{color:var(--marfil);border-color:rgba(246,243,234,.5)}
+  .tab.active{background:var(--gold);border-color:var(--gold);color:var(--choco)}
+  .right{display:flex;align-items:center;gap:14px;flex:0 0 auto}
+  .dev{display:flex;gap:2px;background:rgba(246,243,234,.1);border-radius:5px;padding:3px}
+  .dev button{background:none;border:none;color:var(--mut);cursor:pointer;padding:6px 9px;border-radius:4px;display:flex;align-items:center}
+  .dev button.active{background:var(--gold);color:var(--choco)}
+  .dev button svg{width:16px;height:16px}
+  .open{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+  .stage{flex:1 1 auto;overflow:auto;display:flex;justify-content:center;padding:0}
+  .stage.pad{padding:22px}
+  .framewrap{width:100%;height:100%;background:#fff;transition:max-width .3s}
+  .stage.pad .framewrap{box-shadow:0 10px 40px rgba(0,0,0,.18);border-radius:6px;overflow:hidden;height:auto;min-height:100%}
+  iframe{width:100%;height:100%;border:none;display:block;background:#fff}
+  .meta{position:fixed;bottom:0;left:0;right:0;display:none}
+  @media(max-width:680px){.brand .mk{display:none}.open{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><g id="ia">
+<circle cx="54" cy="16" r="5.4" fill="currentColor"/><line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/><line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/><line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/><line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/><line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/><line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/><line x1="39" y1="104" x2="53" y2="104" stroke="currentColor" stroke-width="5"/><line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
+</g></defs></svg>
+
+<div class="bar">
+  <div class="brand"><svg viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="mk">INTIARA</span></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="right">
+    <div class="dev" id="dev">
+      <button data-w="full" class="active" title="Desktop" aria-label="Desktop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="13" rx="1"/><line x1="8" y1="21" x2="16" y2="21"/></svg></button>
+      <button data-w="834" title="Tablet" aria-label="Tablet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="2"/></svg></button>
+      <button data-w="390" title="Mobile" aria-label="Mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></button>
+    </div>
+    <a class="open" id="openTab" href="index.html" target="_blank">Open ↗</a>
+  </div>
+</div>
+
+<div class="stage" id="stage">
+  <div class="framewrap" id="framewrap"><iframe id="frame" src="index.html" title="INTIARA preview"></iframe></div>
+</div>
+
+<script>
+  var VARS=[
+    {label:'Current build', src:'index.html'},
+    {label:'10 · Maison × Rail', src:'variations/v10-maison-rail.html'},
+    {label:'06 · Editorial Full-bleed', src:'variations/v6-editorial-fullbleed.html'},
+    {label:'07 · Centered Editorial', src:'variations/v7-centered-editorial.html'},
+    {label:'08 · Left Rail', src:'variations/v8-left-rail.html'},
+    {label:'09 · Type-first', src:'variations/v9-type-first.html'},
+    {label:'01 · Editorial Noir', src:'variations/v1-editorial-noir.html'},
+    {label:'02 · Quiet Minimal', src:'variations/v2-quiet-minimal.html'},
+    {label:'03 · Gold Maison', src:'variations/v3-gold-maison.html'},
+    {label:'04 · Split Modern', src:'variations/v4-split-modern.html'},
+    {label:'05 · Warm Terracotta', src:'variations/v5-warm-terracotta.html'}
+  ];
+  var tabs=document.getElementById('tabs'), frame=document.getElementById('frame'),
+      openTab=document.getElementById('openTab'), stage=document.getElementById('stage'),
+      framewrap=document.getElementById('framewrap'), current=0;
+  function select(i){
+    current=i; frame.src=VARS[i].src; openTab.href=VARS[i].src;
+    Array.prototype.forEach.call(tabs.children,function(b,j){b.classList.toggle('active',j===i);});
+  }
+  VARS.forEach(function(v,i){
+    var b=document.createElement('button'); b.className='tab'+(i===0?' active':''); b.textContent=v.label;
+    b.onclick=function(){select(i);}; tabs.appendChild(b);
+  });
+  document.querySelectorAll('#dev button').forEach(function(btn){
+    btn.onclick=function(){
+      document.querySelectorAll('#dev button').forEach(function(x){x.classList.remove('active');});
+      btn.classList.add('active');
+      var w=btn.getAttribute('data-w');
+      if(w==='full'){ stage.classList.remove('pad'); framewrap.style.maxWidth='none'; }
+      else { stage.classList.add('pad'); framewrap.style.maxWidth=w+'px'; }
+    };
+  });
+</script>
+</body>
+</html>

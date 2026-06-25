@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Variation 5 · Warm Terracotta</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#F4EBDD;--bg2:#EADCC6;--text:#3A2A20;--mut:#8a7259;--terra:#A85B36;--terraD:#8a4527;--gold:#BB8E4C;--line:rgba(58,42,32,.16);--ser:'Playfair Display',serif;--sans:'Jost',sans-serif}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.75}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1260px;margin:0 auto;padding:0 44px}
+  .eye{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--terraD)}
+  h1,h2,h3{font-family:var(--ser);font-weight:400;line-height:1.08}
+  .btn{display:inline-block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;padding:15px 36px;background:var(--terra);color:#fff;transition:.4s}
+  .btn:hover{background:var(--terraD)}
+  .btn-o{background:transparent;border:1px solid var(--text);color:var(--text)}
+  .btn-o:hover{background:var(--text);color:var(--bg)}
+  header{display:flex;align-items:center;justify-content:space-between;padding:24px 44px;position:absolute;top:0;left:0;right:0;z-index:10;color:#fff}
+  header .brand{display:flex;align-items:center;gap:11px}
+  header .mark{font-family:var(--ser);font-size:23px;letter-spacing:.36em;text-transform:uppercase}
+  header nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-left:26px}
+  /* hero image-led */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;background:linear-gradient(180deg,#6e4a36,#3a2a20);overflow:hidden;color:#fff}
+  .hero .heroW{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .hero .heroW svg{opacity:.10;height:50%;color:#fff}
+  .hero .hlab{position:absolute;top:50%;left:0;right:0;text-align:center;transform:translateY(-50%);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.45);pointer-events:none}
+  .hero .htext{position:relative;padding:0 44px 70px;max-width:1260px;margin:0 auto;width:100%}
+  .hero h1{font-size:clamp(44px,6.4vw,96px);font-style:italic}
+  .hero h1 span{display:block;font-style:normal;font-family:var(--sans);font-weight:300;font-size:.2em;letter-spacing:.4em;text-transform:uppercase;margin-bottom:18px;color:var(--gold)}
+  .hero p{max-width:480px;margin:22px 0 30px;color:rgba(255,255,255,.82)}
+  /* statement */
+  .state{text-align:center;padding:96px 44px}
+  .state p{font-family:var(--ser);font-style:italic;font-size:clamp(22px,3vw,38px);max-width:880px;margin:0 auto;line-height:1.4}
+  .state p em{color:var(--terra)}
+  /* materials warm */
+  .mats{background:var(--bg2);padding:90px 0}
+  .mats .head{text-align:center;margin-bottom:52px}
+  .mats .head h2{font-size:clamp(30px,4vw,52px);margin-top:10px}
+  .mrow{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+  .mrow .m{text-align:center}
+  .mrow .m .dot{width:46px;height:46px;border-radius:50%;border:1px solid var(--terra);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--terra)}
+  .mrow .m h3{font-size:19px;margin-bottom:6px}
+  .mrow .m p{font-size:12px;color:var(--mut)}
+  /* featured */
+  .feat{padding:96px 0}
+  .feat .fh{text-align:center;margin-bottom:50px}
+  .feat .fh h2{font-size:clamp(30px,4vw,52px);margin-top:10px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card .ph{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .card .ph .w{opacity:.16;height:40%;color:#fff}
+  .card .ph .lab{position:absolute;bottom:14px;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+  .card h3{font-size:22px;margin:16px 0 4px}
+  .card .pr{font-size:13px;color:var(--mut)}
+  .feat .foot{text-align:center;margin-top:50px}
+  footer{background:var(--text);color:rgba(244,235,221,.7);padding:64px 44px;text-align:center}
+  footer .mark{font-family:var(--ser);font-size:23px;letter-spacing:.36em;text-transform:uppercase;color:var(--gold)}
+  footer p{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;margin-top:14px}
+  .vbadge{position:fixed;left:14px;bottom:14px;background:var(--terra);color:#fff;font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:7px 13px;z-index:30}
+  @media(max-width:860px){.mrow{grid-template-columns:1fr 1fr 1fr}.grid{grid-template-columns:1fr}header nav{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><g id="ia">
+<circle cx="54" cy="16" r="5.4" fill="currentColor"/><line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/><line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/><line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/><line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/><line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/><line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/><line x1="39" y1="104" x2="53" y2="104" stroke="currentColor" stroke-width="5"/><line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
+</g></defs></svg>
+<a class="vbadge" href="index.html">‹ Variations · 05 Warm Terracotta</a>
+
+<header>
+  <div class="brand"><svg viewBox="0 0 133 120" width="26" height="23" fill="none" style="color:#fff"><use href="#ia"/></svg><span class="mark">INTIARA</span></div>
+  <nav><a href="#">Story</a><a href="#">Materials</a><a href="#">Collection</a><a href="#">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <div class="heroW"><svg viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg></div>
+  <span class="hlab">Editorial · woman + handbag · warm light</span>
+  <div class="htext">
+    <h1><span>Contemporary luxury · Peru</span>The warmth of<br>where it was made.</h1>
+    <p>INTIARA transforms Peru's finest materials — alpaca, 950 silver and Andean opal — into designer pieces.</p>
+    <a class="btn" href="#">Explore the collection</a>
+  </div>
+</section>
+
+<section class="state"><p>The richness of each piece is <em>discovered</em>, layer by layer.</p></section>
+
+<section class="mats">
+  <div class="wrap">
+    <div class="head"><p class="eye">Materials & detail</p><h2>Noble by nature</h2></div>
+    <div class="mrow">
+      <div class="m"><div class="dot"><svg viewBox="0 0 133 120" width="20" height="18" fill="none"><use href="#ia"/></svg></div><h3>Alpaca</h3><p>Exceptional softness</p></div>
+      <div class="m"><div class="dot"><svg viewBox="0 0 133 120" width="20" height="18" fill="none"><use href="#ia"/></svg></div><h3>950 silver</h3><p>Peruvian, pure</p></div>
+      <div class="m"><div class="dot"><svg viewBox="0 0 133 120" width="20" height="18" fill="none"><use href="#ia"/></svg></div><h3>Andean opal</h3><p>A Peruvian gem</p></div>
+      <div class="m"><div class="dot"><svg viewBox="0 0 133 120" width="20" height="18" fill="none"><use href="#ia"/></svg></div><h3>Tassels</h3><p>Responsibly sourced</p></div>
+      <div class="m"><div class="dot"><svg viewBox="0 0 133 120" width="20" height="18" fill="none"><use href="#ia"/></svg></div><h3>Woven interior</h3><p>Handloomed within</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="feat wrap">
+  <div class="fh"><p class="eye">The collection</p><h2>Seven pieces</h2></div>
+  <div class="grid">
+    <div class="card"><div class="ph" style="background:#9C4A2E"><svg class="ia w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Wayra · Terracotta</span></div><h3>Wayra</h3><div class="pr">Mini bag · €360</div></div>
+    <div class="card"><div class="ph" style="background:#A77B45"><svg class="ia w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Pacha · Camel</span></div><h3>Pacha</h3><div class="pr">Crossbody · €420</div></div>
+    <div class="card"><div class="ph" style="background:#5B4636"><svg class="ia w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Inti · Cocoa</span></div><h3>Inti</h3><div class="pr">Tote · €480</div></div>
+  </div>
+  <div class="foot"><a class="btn btn-o" href="#">View the collection</a></div>
+</section>
+
+<footer><div class="mark">INTIARA</div><p>Lujo contemporáneo con alma peruana</p></footer>
+</body>
+</html>

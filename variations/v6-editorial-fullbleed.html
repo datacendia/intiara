@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Variation 6 · Editorial Full-bleed</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--marfil:#F6F3EA;--marfil2:#EEEADC;--choco:#3B2F24;--choco2:#2C2219;--gold:#C8A95A;--goldD:#9E7C39;--mut:#7A6B5A;--line:rgba(59,47,36,.16);--ser:'Playfair Display',serif;--sans:'Jost',sans-serif}
+  body{background:var(--marfil);color:var(--choco);font-family:var(--sans);font-weight:300;line-height:1.7}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 44px}
+  .eye{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--goldD)}
+  h1,h2,h3{font-family:var(--ser);font-weight:400;line-height:1.08}
+  .btn{display:inline-block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;padding:15px 34px;border:1px solid currentColor;transition:.4s}
+  .btn:hover{background:var(--choco);color:var(--marfil);border-color:var(--choco)}
+  .btn-l{border-color:#fff;color:#fff}.btn-l:hover{background:#fff;color:var(--choco)}
+  header{position:absolute;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:26px 44px;color:#fff}
+  header .brand{display:flex;align-items:center;gap:11px}
+  header .mark{font-family:var(--ser);font-size:23px;letter-spacing:.34em;text-transform:uppercase}
+  header nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-left:26px}
+  /* hero full-bleed */
+  .hero{position:relative;min-height:96vh;display:flex;align-items:flex-end;background:linear-gradient(160deg,#5a4632,#2C2219);overflow:hidden;color:#fff}
+  .hero .bw{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .hero .bw svg{opacity:.08;height:54%;color:#fff}
+  .hero .hl{position:absolute;top:46%;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+  .hero .htext{position:relative;max-width:1280px;margin:0 auto;width:100%;padding:0 44px 76px}
+  .hero h1{font-size:clamp(40px,5.6vw,84px);max-width:880px}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero p{max-width:440px;margin:24px 0 30px;color:rgba(255,255,255,.82);font-size:15px}
+  /* strip */
+  .strip{background:var(--marfil2);border-bottom:1px solid var(--line)}
+  .strip .wrap{padding:44px;text-align:center}
+  .strip p{font-family:var(--ser);font-style:italic;font-size:clamp(20px,2.4vw,30px);max-width:840px;margin:0 auto}
+  /* story */
+  .sec{padding:104px 0}
+  .story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .ph{background:var(--marfil2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .ph .w{opacity:.13;height:40%;color:var(--choco)}.ph.dark{background:var(--choco2)}.ph.dark .w{color:var(--gold);opacity:.18}
+  .ph .lab{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}.ph.dark .lab{color:rgba(246,243,234,.5)}
+  .story .sp{aspect-ratio:1/1}
+  .story h2{font-size:clamp(30px,4vw,48px);margin:14px 0 20px}
+  .story p{color:var(--mut);margin-bottom:18px;max-width:420px}
+  /* materials horizontal */
+  .mats{background:var(--choco);color:var(--marfil);padding:104px 0}
+  .mats .eye{color:var(--gold)}.mats h2{color:var(--marfil)}
+  .mhead{text-align:center;max-width:620px;margin:0 auto 54px}.mhead h2{font-size:clamp(30px,4vw,50px);margin-top:12px}.mhead p{color:rgba(246,243,234,.6);margin-top:16px}
+  .mrow{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(246,243,234,.12);border:1px solid rgba(246,243,234,.12)}
+  .mrow .m{background:var(--choco);padding:30px 22px;text-align:center}
+  .mrow .m .n{font-family:var(--ser);font-style:italic;color:var(--gold);font-size:14px}
+  .mrow .m h3{font-size:20px;margin:10px 0 6px}.mrow .m p{font-size:12px;color:rgba(246,243,234,.6)}
+  /* collection */
+  .chead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:46px}.chead h2{font-size:clamp(28px,3.6vw,46px)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card .cph{aspect-ratio:4/5}
+  .card .info{display:flex;justify-content:space-between;margin-top:15px}.card .nm{font-family:var(--ser);font-size:21px}.card .pr{font-size:13px;color:var(--mut)}
+  /* values */
+  .vals{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+  .vals .v{border-top:1px solid var(--choco);padding-top:16px}.vals .v h3{font-size:19px;margin-bottom:8px}.vals .v p{font-size:13px;color:var(--mut)}
+  footer{background:var(--choco2);color:rgba(246,243,234,.7);padding:60px 44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  footer .mark{font-family:var(--ser);font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+  footer p{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase}
+  .vbadge{position:fixed;left:14px;bottom:14px;background:var(--gold);color:var(--choco);font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:7px 13px;z-index:30}
+  @media(max-width:860px){.story,.grid,.vals,.mrow{grid-template-columns:1fr}.vals{gap:24px}header nav{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><g id="ia">
+<circle cx="54" cy="16" r="5.4" fill="currentColor"/><line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/><line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/><line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/><line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/><line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/><line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/><line x1="39" y1="104" x2="53" y2="104" stroke="currentColor" stroke-width="5"/><line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
+</g></defs></svg>
+<a class="vbadge" href="index.html">‹ Variations · 06 Editorial Full-bleed (on-brief)</a>
+
+<header>
+  <div class="brand"><svg viewBox="0 0 133 120" width="26" height="23" fill="none" style="color:#fff"><use href="#ia"/></svg><span class="mark">INTIARA</span></div>
+  <nav><a href="#">Story</a><a href="#">Materials</a><a href="#">Collection</a><a href="#">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <div class="bw"><svg viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg></div>
+  <span class="hl">Editorial · sophisticated woman · European setting</span>
+  <div class="htext">
+    <p class="eye" style="color:var(--gold);margin-bottom:18px">Contemporary luxury · Peru</p>
+    <h1>Peru's finest materials, as <em>designer pieces</em>.</h1>
+    <p>INTIARA transforms alpaca, 950 silver and Andean opal into contemporary luxury, made in limited production.</p>
+    <a class="btn btn-l" href="#">Explore the collection</a>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap"><p>Contemporary design, created from the finest materials of Peru.</p></div></div>
+
+<section class="sec wrap"><div class="story">
+  <div class="ph sp"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Portrait · the founder</span></div>
+  <div>
+    <p class="eye">Our story</p><h2>A bridge between tradition and design</h2>
+    <p>A journey to Arequipa revealed master artisans preserving the art of working extraordinary fibres such as alpaca — and a vision was born: to honour that heritage through contemporary design.</p>
+    <a class="btn" href="#">Read our story</a>
+  </div>
+</div></section>
+
+<section class="mats"><div class="wrap">
+  <div class="mhead"><p class="eye">Materials & detail</p><h2>Discovered, layer by layer</h2><p>First the design, then the alpaca, the woven interior, the 950 silver, and finally the opal.</p></div>
+  <div class="mrow">
+    <div class="m"><span class="n">01</span><h3>Alpaca</h3><p>Exceptional softness</p></div>
+    <div class="m"><span class="n">02</span><h3>950 silver</h3><p>Peruvian, pure</p></div>
+    <div class="m"><span class="n">03</span><h3>Andean opal</h3><p>A Peruvian gem</p></div>
+    <div class="m"><span class="n">04</span><h3>Tassels</h3><p>Responsibly sourced</p></div>
+    <div class="m"><span class="n">05</span><h3>Woven interior</h3><p>Handloomed within</p></div>
+  </div>
+</div></section>
+
+<section class="sec wrap">
+  <div class="chead"><div><p class="eye">The collection</p><h2 style="margin-top:10px">Seven pieces</h2></div><a class="btn" href="#">View all →</a></div>
+  <div class="grid">
+    <a class="card"><div class="ph cph" style="background:#E5D8C0"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Inti · Cocoa</span></div><div class="info"><span class="nm">Inti</span><span class="pr">€480</span></div></a>
+    <a class="card"><div class="ph cph" style="background:#D9CDB6"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Killa · Chocolate</span></div><div class="info"><span class="nm">Killa</span><span class="pr">€460</span></div></a>
+    <a class="card"><div class="ph cph" style="background:#E0D2B4"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Pacha · Camel</span></div><div class="info"><span class="nm">Pacha</span><span class="pr">€420</span></div></a>
+  </div>
+</section>
+
+<section class="sec wrap" style="padding-top:0">
+  <div class="vals">
+    <div class="v"><h3>Designer-led</h3><p>Pieces with their own identity.</p></div>
+    <div class="v"><h3>Exceptional materials</h3><p>Alpaca, 950 silver, Andean opal.</p></div>
+    <div class="v"><h3>Contemporary luxury</h3><p>Quiet, minimal, timeless.</p></div>
+    <div class="v"><h3>Responsible</h3><p>Limited, conscious production.</p></div>
+  </div>
+</section>
+
+<footer><div class="mark">INTIARA</div><p>Lujo contemporáneo con alma peruana</p></footer>
+</body>
+</html>

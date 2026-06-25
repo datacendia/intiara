@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Variation 10 · Gold Maison × Left Rail</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#F6F1E6;--bg2:#EFE7D6;--bg3:#2C2219;--text:#3A2E22;--mut:#8a7a63;--gold:#B08A4F;--goldL:#C8A95A;--line:rgba(58,46,34,.16);--disp:'Cinzel',serif;--ser:'EB Garamond',serif;--sans:'Jost',sans-serif;--rail:300px}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7}
+  a{color:inherit;text-decoration:none}
+  .eye{font-size:10.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
+  h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.12}
+  .btn{display:inline-block;font-size:11px;letter-spacing:.26em;text-transform:uppercase;padding:15px 36px;border:1px solid var(--gold);color:var(--gold);transition:.4s}
+  .btn:hover{background:var(--gold);color:#fff}
+  .orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);max-width:240px;margin:0 auto}
+  .orn::before,.orn::after{content:"";height:1px;background:var(--gold);flex:1;opacity:.55}
+  /* RAIL (from template 8), styled Maison (template 3) */
+  .rail{position:fixed;top:0;left:0;width:var(--rail);height:100%;border-right:1px solid var(--line);background:var(--bg2);display:flex;flex-direction:column;align-items:center;text-align:center;padding:38px 30px}
+  .rail::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold)}
+  .rail .seal{width:64px;height:64px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .rail .seal svg{height:34px;width:auto;color:var(--gold)}
+  .rail .mark{font-family:var(--disp);font-size:23px;letter-spacing:.4em;text-transform:uppercase;color:var(--text);padding-left:.2em}
+  .rail nav{margin-top:46px;width:100%;display:flex;flex-direction:column;gap:2px}
+  .rail nav a{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);padding:11px 0;border-bottom:1px solid var(--line)}
+  .rail nav a:hover{color:var(--gold)}
+  .rail nav a:first-child{border-top:1px solid var(--line)}
+  .rail .foot{margin-top:auto}
+  .rail .foot .tag{font-family:var(--ser);font-style:italic;font-size:15px;color:var(--text);margin-bottom:10px;line-height:1.4}
+  .rail .foot .loc{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+  /* MAIN */
+  .main{margin-left:var(--rail)}
+  .ph{background:var(--bg2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .ph .w{opacity:.12;height:42%;color:var(--text)}.ph.dark{background:var(--bg3)}.ph.dark .w{color:var(--goldL);opacity:.18}
+  .ph .lab{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--mut)}.ph.dark .lab{color:rgba(246,243,234,.5)}
+  .hero{text-align:center;padding:84px 60px 64px}
+  .hero .eye{margin-bottom:20px}
+  .hero h1{font-size:clamp(36px,4.4vw,64px);letter-spacing:.02em}
+  .hero .deck{font-family:var(--ser);font-style:italic;font-size:clamp(19px,2.1vw,26px);max-width:640px;margin:22px auto 0}
+  .hero .himg{max-width:620px;aspect-ratio:16/10;margin:44px auto 34px}
+  .sec{padding:90px 60px}
+  .center{text-align:center;max-width:600px;margin:0 auto 46px}.center h2{font-size:clamp(28px,3.6vw,46px);margin-top:12px}.center p{color:var(--mut);margin-top:14px}
+  .vals{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:74px 60px;text-align:center}
+  .vrow{max-width:840px;margin:28px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+  .vrow .v h3{font-size:17px;letter-spacing:.03em;margin-bottom:7px}.vrow .v p{font-size:12.5px;color:var(--mut);font-family:var(--ser);font-style:italic}
+  .matlist{max-width:720px;margin:0 auto}
+  .matlist .m{display:grid;grid-template-columns:50px 1fr auto;gap:20px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line)}
+  .matlist .m:last-child{border-bottom:1px solid var(--line)}
+  .matlist .m .n{font-family:var(--ser);font-style:italic;color:var(--gold);font-size:17px}
+  .matlist .m h3{font-size:21px}.matlist .m p{color:var(--mut);font-size:13px;text-align:right;font-family:var(--ser);font-style:italic;max-width:280px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card .cph{aspect-ratio:4/5}.card .info{text-align:center;margin-top:15px}.card .nm{font-family:var(--disp);font-size:20px}.card .pr{font-size:12.5px;color:var(--mut);margin-top:4px;letter-spacing:.04em}
+  .cfoot{text-align:center;margin-top:48px}
+  .mfoot{text-align:center;padding:60px;border-top:4px solid var(--gold);background:var(--bg2)}
+  .mfoot .mark{font-family:var(--disp);font-size:22px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);padding-left:.2em}
+  .mfoot p{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-top:14px}
+  .vbadge{position:fixed;left:14px;bottom:14px;background:var(--gold);color:#fff;font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:7px 13px;z-index:30}
+  @media(max-width:900px){
+    .rail{position:static;width:auto;height:auto;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;padding:16px 22px;border-right:none;border-bottom:1px solid var(--line)}
+    .rail .seal{width:40px;height:40px;margin-bottom:0}.rail .seal svg{height:22px}
+    .rail .mark{font-size:19px}.rail nav,.rail .foot{display:none}
+    .main{margin-left:0}.hero,.sec,.vals,.mfoot{padding-left:24px;padding-right:24px}
+    .vrow,.grid{grid-template-columns:1fr 1fr}.matlist .m{grid-template-columns:36px 1fr}.matlist .m p{text-align:left;grid-column:2}
+  }
+  @media(max-width:560px){.vrow,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><g id="ia">
+<circle cx="54" cy="16" r="5.4" fill="currentColor"/><line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/><line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/><line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/><line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/><line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/><line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/><line x1="39" y1="104" x2="53" y2="104" stroke="currentColor" stroke-width="5"/><line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
+</g></defs></svg>
+<a class="vbadge" href="index.html">‹ Variations · 10 Maison × Rail</a>
+
+<aside class="rail">
+  <div class="seal"><svg viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg></div>
+  <div class="mark">INTIARA</div>
+  <nav><a href="#">Story</a><a href="#">Materials</a><a href="#">Collection</a><a href="#">Atelier</a><a href="#">Contact</a></nav>
+  <div class="foot"><div class="tag">Lujo contemporáneo<br>con alma peruana</div><div class="loc">Lima, Perú</div></div>
+</aside>
+
+<div class="main">
+  <section class="hero">
+    <p class="eye">Lujo contemporáneo · Diseño de autor</p>
+    <h1>The Maison of<br>Peruvian materials</h1>
+    <p class="deck">INTIARA transforms Peru's finest materials into designer pieces — discovered, layer by layer.</p>
+    <div class="ph himg"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Editorial · sophisticated woman · European setting</span></div>
+    <a class="btn" href="#">Explore the collection</a>
+  </section>
+
+  <section class="vals">
+    <div class="orn"><svg viewBox="0 0 133 120" width="22" height="20" fill="none" style="color:var(--gold)"><use href="#ia"/></svg></div>
+    <p class="eye" style="margin-top:14px">What INTIARA protects</p>
+    <div class="vrow">
+      <div class="v"><h3>Designer-led</h3><p>Identity of its own</p></div>
+      <div class="v"><h3>Noble materials</h3><p>Alpaca · 950 silver · opal</p></div>
+      <div class="v"><h3>Contemporary</h3><p>Quiet, timeless luxury</p></div>
+      <div class="v"><h3>Responsible</h3><p>Limited production</p></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="center"><p class="eye">Materials & detail</p><h2>Discovered, layer by layer</h2></div>
+    <div class="matlist">
+      <div class="m"><span class="n">01</span><h3>Alpaca</h3><p>The softness of an exceptional fibre.</p></div>
+      <div class="m"><span class="n">02</span><h3>950 silver</h3><p>The nobility of Peruvian silver.</p></div>
+      <div class="m"><span class="n">03</span><h3>Andean opal</h3><p>A gem of Peruvian origin.</p></div>
+      <div class="m"><span class="n">04</span><h3>Alpaca tassels</h3><p>Beauty with purpose.</p></div>
+      <div class="m"><span class="n">05</span><h3>Woven interior</h3><p>Stories discovered within.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="background:var(--bg2);border-top:1px solid var(--line)">
+    <div class="center"><p class="eye">The collection</p><h2>Seven pieces</h2></div>
+    <div class="grid">
+      <a class="card"><div class="ph cph" style="background:#E5D8C0"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Inti · Cocoa</span></div><div class="info"><div class="nm">Inti</div><div class="pr">Tote · €480</div></div></a>
+      <a class="card"><div class="ph cph" style="background:#DDCFB6"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Killa · Chocolate</span></div><div class="info"><div class="nm">Killa</div><div class="pr">Shoulder · €460</div></div></a>
+      <a class="card"><div class="ph cph" style="background:#E0D2B4"><svg class="w" viewBox="0 0 133 120" fill="none"><use href="#ia"/></svg><span class="lab">Quri · Cognac</span></div><div class="info"><div class="nm">Quri</div><div class="pr">Wallet · €240</div></div></a>
+    </div>
+    <div class="cfoot"><a class="btn" href="#">View the collection</a></div>
+  </section>
+
+  <div class="mfoot"><div class="mark">INTIARA</div><p>Lujo contemporáneo con alma peruana</p></div>
+</div>
+</body>
+</html>
