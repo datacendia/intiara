@@ -1,0 +1,8 @@
+# Hide internal design/draft pages from the public site
+/showcase.html       /404.html   404
+/logo-options.html   /404.html   404
+/variations          /404.html   404
+/variations/*        /404.html   404
+
+# Pretty URL for the admin panel
+/admin               /admin.html 200

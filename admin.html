@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTIARA — Admin</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/admin.css" />
+</head>
+<body>
+
+<!-- ===== LOGIN ===== -->
+<div class="login-wrap" id="login">
+  <div class="login-card">
+    <svg class="ia" viewBox="0 0 133 120" fill="none" aria-hidden="true">
+      <circle cx="54" cy="16" r="5.4" fill="currentColor"/>
+      <line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/>
+      <line x1="32" y1="34" x2="52" y2="34" stroke="currentColor" stroke-width="5"/>
+      <line x1="32" y1="104" x2="52" y2="104" stroke="currentColor" stroke-width="5"/>
+      <line x1="68" y1="30" x2="46" y2="104" stroke="currentColor" stroke-width="6"/>
+      <line x1="68" y1="30" x2="92" y2="104" stroke="currentColor" stroke-width="6"/>
+      <line x1="56" y1="80" x2="82" y2="80" stroke="currentColor" stroke-width="5"/>
+    </svg>
+    <h1>INTIARA Studio</h1>
+    <p class="sub">Sign in to edit your website content.</p>
+    <div class="fld">
+      <label for="tok">Access key</label>
+      <input type="password" id="tok" placeholder="Paste your GitHub access token" autocomplete="off" />
+    </div>
+    <button class="btn btn-fill" id="loginBtn" style="width:100%;justify-content:center">Sign in</button>
+    <p id="loginMsg" class="sub" style="margin:14px 0 0;min-height:18px"></p>
+    <div class="help">
+      <b>First time?</b> You need a one-time access token (free). Quick steps:
+      <ol>
+        <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained tokens</a> (sign in as <b>datacendia</b>).</li>
+        <li>Repository access → <b>Only select repositories</b> → <b>datacendia/intiara</b>.</li>
+        <li>Permissions → Repository permissions → <b>Contents</b> → <b>Read and write</b>.</li>
+        <li>Generate, copy the token, paste it above.</li>
+      </ol>
+      The key is stored only in this browser. Use “Sign out” on a shared computer.
+    </div>
+  </div>
+</div>
+
+<!-- ===== APP ===== -->
+<div id="app" class="hidden">
+  <div class="topbar">
+    <div class="brand">INTIARA<small>Studio</small></div>
+    <div class="spacer"></div>
+    <span class="status" id="topStatus"></span>
+    <a class="btn btn-sm btn-ghost" href="/index.html" target="_blank" rel="noopener">View site ↗</a>
+    <button class="btn btn-sm btn-ghost" id="logoutBtn">Sign out</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="products">Products</button>
+    <button class="tab" data-tab="materials">Materials</button>
+    <button class="tab" data-tab="text">Text</button>
+    <button class="tab" data-tab="settings">Settings</button>
+  </div>
+
+  <div class="wrap">
+    <section class="panel active" id="panel-products">
+      <div class="panel-head"><h2>Products</h2><p>Edit pieces, prices and photos. Each field has an English and Spanish version.</p></div>
+      <div class="addbar"><button class="btn btn-sm" data-act="addProduct">+ Add a product</button></div>
+      <div id="productList"></div>
+    </section>
+
+    <section class="panel" id="panel-materials">
+      <div class="panel-head"><h2>Materials</h2><p>The materials shown on the Materials page and the home page.</p></div>
+      <div id="materialList"></div>
+    </section>
+
+    <section class="panel" id="panel-text">
+      <div class="panel-head"><h2>Text</h2><p>Every line of text on the site, in English and Spanish. Use search to find a phrase.</p></div>
+      <div class="search"><input type="text" id="copySearch" placeholder="Search the text on your site…" /></div>
+      <div id="copyGroups"></div>
+    </section>
+
+    <section class="panel" id="panel-settings">
+      <div class="panel-head"><h2>Settings</h2><p>Contact details, social links, currency and the main brand photos.</p></div>
+      <div id="settingsBody"></div>
+    </section>
+  </div>
+
+  <div class="publishbar">
+    <span class="msg" id="publishMsg">Loading your content…</span>
+    <button class="btn btn-sm btn-ghost" id="reloadBtn">Discard &amp; reload</button>
+    <button class="btn btn-fill" id="publishBtn" disabled>Publish changes</button>
+  </div>
+</div>
+
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /showcase.html
+Disallow: /logo-options.html
+Disallow: /variations
