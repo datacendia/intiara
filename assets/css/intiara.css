@@ -11,7 +11,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--marfil);color:var(--ink);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-left:var(--rail)}
+body{font-family:var(--sans);background:var(--marfil);color:var(--ink);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.16;letter-spacing:.02em}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
@@ -37,18 +37,19 @@ img{max-width:100%;display:block}
 /* announce */
 .announce{background:var(--marfil-2);color:var(--mut);text-align:center;font-size:10px;letter-spacing:.28em;text-transform:uppercase;padding:11px 16px;border-bottom:1px solid var(--line)}
 
-/* ===== LEFT RAIL (header) ===== */
-header#hdr{position:fixed;top:0;left:0;width:var(--rail);height:100vh;background:var(--marfil-2);border-right:1px solid var(--line);z-index:60}
-header#hdr::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold)}
-header#hdr .nav{display:flex;flex-direction:column;align-items:center;text-align:center;height:100%;padding:42px 30px}
-header#hdr .logo{flex-direction:column;gap:15px}
-header#hdr .nav-links{display:flex;flex-direction:column;gap:0;width:100%;margin-top:48px}
-header#hdr .nav-links a{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);padding:12px 0;border-bottom:1px solid var(--line);width:100%}
-header#hdr .nav-links a:first-child{border-top:1px solid var(--line)}
-header#hdr .nav-links a::after{display:none}
+/* ===== HEADER — centered Gold Maison ===== */
+header#hdr{position:relative;width:100%;background:var(--marfil-2);border-bottom:1px solid var(--line);border-top:4px solid var(--gold);z-index:60}
+header#hdr .nav{display:block;height:auto;padding:26px 44px 20px;text-align:center;position:relative}
+header#hdr .logo{display:inline-flex;flex-direction:column;gap:12px;align-items:center}
+header#hdr .logo .ia{width:60px;height:60px;padding:14px}
+header#hdr .logo .mark{font-size:24px;letter-spacing:.42em}
+header#hdr .nav-links{display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;gap:2px 4px;width:auto;margin:18px auto 0}
+header#hdr .nav-links a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);padding:6px 14px;width:auto}
 header#hdr .nav-links a:hover,header#hdr .nav-links a.active{color:var(--gold)}
-header#hdr .nav-actions{flex-direction:column;gap:18px;margin-top:auto;align-items:center}
+header#hdr .nav-actions{position:absolute;top:30px;right:44px;display:flex;flex-direction:row;gap:16px;align-items:center;margin-top:0}
 header#hdr .nav-cta{display:none}
+header#hdr .menu-toggle{position:absolute;top:30px;left:30px}
+header#hdr .rail-tagline{display:none}
 .nav{display:flex;align-items:center;justify-content:space-between}
 .nav-links a{position:relative}
 .lang button{background:none;border:none;font-family:var(--sans);font-size:11px;letter-spacing:.14em;color:var(--ink-2);cursor:pointer;padding:2px 3px}
@@ -247,6 +248,37 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
 .pdp-gallery .thumbs .photo{position:relative}
 .pdp-gallery .thumbs .photo.active{outline:2px solid var(--gold);outline-offset:-2px}
 
+/* ===== greca motif (SINCHI) ===== */
+.greca-divider{display:flex;align-items:center;justify-content:center;gap:26px;max-width:560px;margin:0 auto;padding:8px 0}
+.greca-divider .ln{flex:1;height:1px;background:var(--gold);opacity:.5;max-width:180px}
+.greca-mark{flex:0 0 auto;width:58px;height:67px;background:var(--gold);-webkit-mask:url(../img/greca.svg) center/contain no-repeat;mask:url(../img/greca.svg) center/contain no-repeat}
+.greca-watermark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:210px;height:242px;background:var(--choco);opacity:.12;-webkit-mask:url(../img/greca.svg) center/contain no-repeat;mask:url(../img/greca.svg) center/contain no-repeat;z-index:1;pointer-events:none}
+
+/* ===== collection showcase (interactive) ===== */
+.col-group{aspect-ratio:16/8;border:1px solid var(--line);margin-bottom:12px}
+.col-group-cap{text-align:center;font-family:var(--ser);font-style:italic;font-size:16px;color:var(--mut);margin-bottom:60px}
+.col-explorer{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.col-tabs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.col-tab{display:flex;align-items:baseline;gap:14px;width:100%;text-align:left;background:none;border:none;border-bottom:1px solid var(--line);cursor:pointer;padding:20px 6px;transition:.3s;font-family:var(--sans)}
+.col-tab .ct-n{font-family:var(--ser);font-style:italic;font-size:15px;color:var(--gold);min-width:24px}
+.col-tab .ct-nm{font-family:var(--disp);font-size:19px;letter-spacing:.04em;color:var(--ink-2);transition:.3s}
+.col-tab .ct-sub{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-top:5px}
+.col-tab:hover .ct-nm,.col-tab.active .ct-nm{color:var(--gold)}
+.col-tab.active{background:var(--paper)}
+.col-view{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.col-view .cv-photo{aspect-ratio:4/5;border:1px solid var(--line)}
+.col-view .cv-sub{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.col-view h3{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px}
+.col-view .cv-quote{font-family:var(--ser);font-style:italic;font-size:19px;color:var(--choco);line-height:1.5;margin-bottom:18px;padding-left:16px;border-left:2px solid var(--gold)}
+.col-view .cv-desc{color:var(--ink-2);line-height:1.9;margin-bottom:22px;font-family:var(--ser);font-size:16px}
+.col-view .cv-price{font-family:var(--ser);font-size:19px;margin-bottom:22px}
+.col-view .cv-actions{display:flex;gap:14px;flex-wrap:wrap}
+@media(max-width:1100px){.col-explorer{grid-template-columns:1fr;gap:34px}.col-view{grid-template-columns:1fr}}
+@media(max-width:640px){.col-group{aspect-ratio:4/3}}
+
+/* product detail quote */
+.pdp-info .pquote{font-family:var(--ser);font-style:italic;font-size:19px;color:var(--choco);line-height:1.5;margin:0 0 20px;padding-left:16px;border-left:2px solid var(--gold);max-width:460px}
+
 /* WhatsApp floating button */
 #waFab{position:fixed;right:22px;bottom:22px;width:54px;height:54px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;z-index:120;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .3s var(--ease)}
 #waFab:hover{transform:scale(1.07)}
@@ -264,17 +296,16 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
   .pdp-info{position:static}
 }
 @media(max-width:900px){
-  body{padding-left:0}
-  header#hdr{position:sticky;width:auto;height:auto;border-right:none;border-bottom:1px solid var(--line)}
-  header#hdr .nav{flex-direction:row;justify-content:space-between;align-items:center;height:auto;padding:14px 22px}
+  header#hdr .nav{display:flex;flex-direction:row;justify-content:space-between;align-items:center;height:auto;padding:14px 22px;text-align:left}
   header#hdr .logo{flex-direction:row;gap:11px}
   header#hdr .logo .ia{width:40px;height:40px;padding:9px}
   header#hdr .logo .mark{font-size:18px}
-  header#hdr .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 24px;margin-top:0;z-index:60}
+  header#hdr .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 24px;margin:0;z-index:60}
   header#hdr .nav-links.open{display:flex}
-  header#hdr .nav-actions{flex-direction:row;margin-top:0;gap:18px}
+  header#hdr .nav-links a{padding:11px 0}
+  header#hdr .nav-actions{position:static;flex-direction:row;margin-top:0;gap:18px}
+  header#hdr .menu-toggle{position:static}
   .menu-toggle{display:flex}
-  header#hdr .rail-tagline{display:none}
 }
 @media(max-width:640px){
   .wrap{padding:0 22px}
