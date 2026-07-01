@@ -8,127 +8,121 @@
     "images": {
       "hero": "",
       "founder": "",
-      "homeMaterial": ""
+      "homeMaterial": "",
+      "collectionGroup": "",
+      "sketchSinchi": "",
+      "sketchAllin": "",
+      "sketchCheqaq": "",
+      "sketchIllari": "",
+      "sketchSumaq": "",
+      "artisans": "",
+      "pack": ""
     }
   },
   "products": [
     {
-      "id": "inti",
+      "id": "sinchi",
       "type": "bag",
-      "cat": { "en": "Tote", "es": "Bolso tote" },
-      "name": "Inti",
+      "cat": { "en": "Serene Strength", "es": "Fortaleza Serena" },
+      "name": "SINCHI",
+      "quote": {
+        "en": "True strength has no need to impose itself. It expresses itself through serenity, balance and conviction.",
+        "es": "La verdadera fortaleza no necesita imponerse. Se expresa con serenidad, equilibrio y convicción."
+      },
       "colour": { "en": "Cocoa", "es": "Cacao" },
-      "hex": "#5B4636",
-      "price": 480,
+      "hex": "#6E5A44",
+      "price": 520,
       "artisan": "Rosa Q.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-014",
       "images": [],
       "desc": {
-        "en": "A structured everyday tote in handwoven baby alpaca, lined with a handloomed Peruvian interior. Quiet, generous and made to last.",
-        "es": "Un bolso tote estructurado en baby alpaca tejida a mano, forrado con un telar peruano. Discreto, amplio y hecho para durar."
+        "en": "The most architectural piece of the collection. SINCHI represents the woman who moves forward with assurance, without any need to draw attention. Its geometric lines and firm structure convey stability, while the softness of Baby Suri Alpaca balances that presence with elegance. Designed to accompany the everyday with sophistication and character.",
+        "es": "La pieza más arquitectónica de la colección. SINCHI representa a la mujer que avanza con seguridad, sin necesidad de llamar la atención. Sus líneas geométricas y su estructura firme transmiten estabilidad, mientras la suavidad de la Baby Suri Alpaca equilibra esa presencia con elegancia. Diseñada para acompañar el ritmo cotidiano con sofisticación y carácter."
       }
     },
     {
-      "id": "killa",
+      "id": "allin-sonqo",
       "type": "bag",
-      "cat": { "en": "Shoulder bag", "es": "Bolso de hombro" },
-      "name": "Killa",
-      "colour": { "en": "Chocolate", "es": "Chocolate" },
-      "hex": "#3B2F24",
-      "price": 460,
+      "cat": { "en": "Harmony", "es": "Armonía" },
+      "name": "ALLIN SONQO",
+      "quote": {
+        "en": "Elegance can also be felt in the freedom of movement.",
+        "es": "La elegancia también puede sentirse en la libertad de movimiento."
+      },
+      "colour": { "en": "Camel", "es": "Camello" },
+      "hex": "#A98A5C",
+      "price": 480,
       "artisan": "Elena M.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-027",
       "images": [],
       "desc": {
-        "en": "A softly sculpted shoulder bag with a 950 silver clasp and a single Andean opal set by hand. Evening or day, without effort.",
-        "es": "Un bolso de hombro de forma suave, con broche de plata 950 y un ópalo andino engastado a mano. De día o de noche, sin esfuerzo."
+        "en": "Designed to accompany a woman with ease, this piece represents the balance between function and sophistication. Its design allows freedom of movement without giving up elegance. An invitation to live with calm, harmony and confidence. (Name pending validation.)",
+        "es": "Diseñada para acompañar a la mujer con naturalidad, esta pieza representa el equilibrio entre funcionalidad y sofisticación. Su diseño permite moverse con libertad sin renunciar a la elegancia. Es una invitación a vivir con calma, armonía y confianza. (Nombre pendiente de validación.)"
       }
     },
     {
-      "id": "pacha",
+      "id": "cheqaq",
       "type": "bag",
-      "cat": { "en": "Crossbody", "es": "Bandolera" },
-      "name": "Pacha",
-      "colour": { "en": "Camel", "es": "Camello" },
-      "hex": "#A77B45",
-      "price": 420,
+      "cat": { "en": "Authenticity", "es": "Autenticidad" },
+      "name": "CHEQAQ",
+      "quote": {
+        "en": "True elegance begins when a woman is true to herself.",
+        "es": "La verdadera elegancia comienza cuando una mujer es fiel a sí misma."
+      },
+      "colour": { "en": "Taupe", "es": "Topo" },
+      "hex": "#8A7D6B",
+      "price": 460,
       "artisan": "Carmen A.",
       "region": { "en": "Puno, Peru", "es": "Puno, Perú" },
       "loom": "PU-009",
       "images": [],
       "desc": {
-        "en": "A compact crossbody woven in warm camel alpaca, finished with an adjustable strap and silver detail. The piece for moving lightly.",
-        "es": "Una bandolera compacta tejida en alpaca color camello, con correa ajustable y detalle de plata. La pieza para moverse con ligereza."
+        "en": "CHEQAQ celebrates the beauty of authenticity. A piece made for those who find luxury in materials, in details and in quality, without any need for excess. Its discreet design reflects a confident personality, where every choice answers to one's own style before any trend.",
+        "es": "CHEQAQ celebra la belleza de la autenticidad. Una pieza pensada para quienes encuentran el lujo en los materiales, en los detalles y en la calidad, sin necesidad de excesos. Su diseño discreto refleja una personalidad segura, donde cada elección responde al estilo propio antes que a las tendencias."
       }
     },
     {
-      "id": "mayu",
+      "id": "illari",
       "type": "bag",
-      "cat": { "en": "Bucket bag", "es": "Bolso saco" },
-      "name": "Mayu",
+      "cat": { "en": "Inner Light", "es": "Luz Interior" },
+      "name": "ILLARI",
+      "quote": {
+        "en": "All true light is born from within.",
+        "es": "Toda luz verdadera nace desde dentro."
+      },
       "colour": { "en": "Ivory", "es": "Marfil" },
-      "hex": "#E7DCC6",
-      "price": 440,
+      "hex": "#C9B48E",
+      "price": 560,
       "artisan": "Rosa Q.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-018",
       "images": [],
       "desc": {
-        "en": "A fluid bucket bag in ivory alpaca with an alpaca tassel and drawstring. Light, tactile and quietly luxurious.",
-        "es": "Un bolso saco fluido en alpaca marfil, con borla de alpaca y cierre de cordón. Ligero, táctil y discretamente lujoso."
+        "en": "The iconic piece of the Ópalo Andino collection. Inspired by a flower that begins to open with the first light of day, ILLARI represents blossoming, delicacy and the beauty that emerges naturally. Its heart, formed of Andean opals, symbolises the singular inner light every woman carries with her.",
+        "es": "La pieza icónica de la Colección Ópalo Andino. Inspirada en una flor que comienza a abrirse con la primera luz del día, ILLARI representa el florecimiento, la delicadeza y la belleza que emerge de manera natural. Su centro, formado por ópalos andinos, simboliza esa luz interior única que cada mujer lleva consigo."
       }
     },
     {
       "id": "sumaq",
       "type": "wallet",
-      "cat": { "en": "Clutch", "es": "Cartera de mano" },
-      "name": "Sumaq",
+      "cat": { "en": "Plenitude", "es": "Plenitud" },
+      "name": "SUMAQ",
+      "quote": {
+        "en": "Beauty reaches its fullest expression when it is born of self-confidence.",
+        "es": "La belleza alcanza su máxima expresión cuando nace de la confianza en una misma."
+      },
       "colour": { "en": "Sand", "es": "Arena" },
-      "hex": "#C9B48E",
-      "price": 320,
+      "hex": "#D8C6A0",
+      "price": 420,
       "artisan": "Lucía F.",
       "region": { "en": "Lima, Peru", "es": "Lima, Perú" },
       "loom": "LI-003",
       "images": [],
       "desc": {
-        "en": "A slim evening clutch with a handwoven interior and a polished 950 silver edge. Considered, never decorative.",
-        "es": "Una cartera de mano esbelta con interior tejido a mano y canto de plata 950 pulida. Cuidada, nunca decorativa."
-      }
-    },
-    {
-      "id": "quri",
-      "type": "wallet",
-      "cat": { "en": "Wallet", "es": "Cartera" },
-      "name": "Quri",
-      "colour": { "en": "Cognac", "es": "Coñac" },
-      "hex": "#8A4F2C",
-      "price": 240,
-      "artisan": "Elena M.",
-      "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
-      "loom": "AR-031",
-      "images": [],
-      "desc": {
-        "en": "A long wallet in cognac alpaca with 950 silver hardware and a woven inner panel. The detail discovered every day.",
-        "es": "Una cartera larga en alpaca coñac, con herrajes de plata 950 y panel interior tejido. El detalle que se descubre cada día."
-      }
-    },
-    {
-      "id": "wayra",
-      "type": "bag",
-      "cat": { "en": "Mini bag", "es": "Mini bolso" },
-      "name": "Wayra",
-      "colour": { "en": "Taupe", "es": "Topo" },
-      "hex": "#8A7D6B",
-      "price": 360,
-      "artisan": "Carmen A.",
-      "region": { "en": "Puno, Peru", "es": "Puno, Perú" },
-      "loom": "PU-014",
-      "images": [],
-      "desc": {
-        "en": "A precise little mini bag in taupe alpaca with a silver chain option. Small in scale, complete in intention.",
-        "es": "Un mini bolso preciso en alpaca topo, con opción de cadena de plata. Pequeño en escala, completo en intención."
+        "en": "SUMAQ represents the culmination of the collection. Made to accompany the most special moments, this clutch expresses a serene, timeless elegance in which every detail reflects balance, excellence and sophistication. More than a piece for an occasion, it is a celebration of the woman who has found her own essence.",
+        "es": "SUMAQ representa la culminación de la colección. Diseñado para acompañar los momentos más especiales, este clutch expresa una elegancia serena y atemporal, donde cada detalle refleja equilibrio, excelencia y sofisticación. Más que una pieza para una ocasión, es una celebración de la mujer que ha encontrado su propia esencia."
       }
     }
   ],
@@ -138,8 +132,8 @@
       "t": { "en": "Alpaca", "es": "Alpaca" },
       "lead": { "en": "The softness of an exceptional fibre", "es": "La suavidad de una fibra excepcional" },
       "p": {
-        "en": "Alpaca is one of the world’s most prized natural fibres, valued for its softness, durability and timeless elegance.",
-        "es": "La alpaca es una de las fibras naturales más apreciadas del mundo por su suavidad, durabilidad y elegancia atemporal."
+        "en": "Our exterior textile is a Baby Suri alpaca blend — approximately 61% Baby Suri alpaca, 29% wool and 10% nylon — selected for its exceptional softness and natural elegance.",
+        "es": "Nuestro textil exterior es una mezcla de Baby Suri alpaca — aproximadamente 61% Baby Suri alpaca, 29% lana y 10% nylon — seleccionada por su suavidad excepcional y su elegancia natural."
       },
       "ph": { "en": "Macro · exterior texture", "es": "Macro · textura exterior" },
       "image": ""
@@ -149,8 +143,8 @@
       "t": { "en": "950 silver", "es": "Plata 950" },
       "lead": { "en": "The nobility of Peruvian silver", "es": "La nobleza de la plata peruana" },
       "p": {
-        "en": "Every piece features details crafted in 950 silver, prized for its exceptional purity and shine.",
-        "es": "Cada pieza incorpora detalles elaborados en plata 950, reconocida por su pureza y brillo excepcionales."
+        "en": "Every piece features details crafted in 950 silver — including the clasp and the branded plate — prized for its exceptional purity and shine.",
+        "es": "Cada pieza incorpora detalles elaborados en plata 950 — incluidos el broche y la placa de la marca — reconocida por su pureza y brillo excepcionales."
       },
       "ph": { "en": "Detail · the hardware", "es": "Detalle · el herraje" },
       "image": ""
@@ -182,17 +176,39 @@
       "t": { "en": "Woven interior", "es": "Telar interior" },
       "lead": { "en": "Stories discovered within", "es": "Historias que se descubren por dentro" },
       "p": {
-        "en": "Each interior features textiles handwoven by Peruvian artisans, turning every piece into an expression of tradition and contemporary design.",
-        "es": "Cada interior incorpora textiles tejidos a mano por artesanos peruanos, convirtiendo cada pieza en una expresión de tradición y diseño contemporáneo."
+        "en": "Each interior features textiles handwoven by Peruvian artisans — each design exclusive to the collection — turning every piece into an expression of tradition and contemporary design.",
+        "es": "Cada interior incorpora textiles tejidos a mano por artesanos peruanos — cada diseño exclusivo de la colección — convirtiendo cada pieza en una expresión de tradición y diseño contemporáneo."
       },
       "ph": { "en": "The bag, opened", "es": "La cartera, abierta" },
+      "image": ""
+    },
+    {
+      "n": "06",
+      "t": { "en": "Alpaca hide", "es": "Piel de alpaca" },
+      "lead": { "en": "Beauty with a conscience", "es": "Belleza con conciencia" },
+      "p": {
+        "en": "Used only in small artisanal details, our alpaca hide comes exclusively from alpacas that passed naturally of old age — a conscious use of every noble material.",
+        "es": "Utilizada únicamente en pequeños detalles artesanales, nuestra piel de alpaca procede exclusivamente de alpacas fallecidas de forma natural durante su vejez — un aprovechamiento consciente de cada material noble."
+      },
+      "ph": { "en": "Detail · artisanal finish", "es": "Detalle · acabado artesanal" },
+      "image": ""
+    },
+    {
+      "n": "07",
+      "t": { "en": "Cowhide", "es": "Cuero vacuno" },
+      "lead": { "en": "Structure that endures", "es": "Estructura que perdura" },
+      "p": {
+        "en": "Cowhide gives each piece its structure — providing the resistance, comfort and durability that let an INTIARA bag last for years.",
+        "es": "El cuero vacuno aporta la estructura de cada pieza — la resistencia, el confort y la durabilidad que permiten que una cartera INTIARA perdure por años."
+      },
+      "ph": { "en": "Detail · the structure", "es": "Detalle · la estructura" },
       "image": ""
     }
   ],
   "copy": {
     "en": {
       "announce": "Contemporary luxury with a Peruvian soul · Worldwide shipping",
-      "nav_home": "Home", "nav_story": "Story", "nav_materials": "Materials", "nav_collection": "Collection", "nav_contact": "Contact", "nav_shop": "Collection",
+      "nav_home": "Home", "nav_story": "Story", "nav_materials": "Noble materials", "nav_collection": "Collection", "nav_process": "Creative process", "nav_artisans": "Artisans", "nav_pack": "Pack", "nav_cart": "Shopping cart", "nav_contact": "Contact", "nav_shop": "Collection",
       "filter_all": "All", "filter_bag": "Bags", "filter_wallet": "Wallets",
       "view_piece": "View piece", "add_bag": "Add to bag", "from": "From",
       "hero_eyebrow": "Contemporary luxury · Designer pieces", "hero_title": "Designed in Peru,<br>made to endure",
@@ -205,8 +221,8 @@
       "home_mat_eyebrow": "Materials & detail", "home_mat_title": "Discovered, layer by layer",
       "home_mat_p": "First the design, then the alpaca, the woven interior, the 950 silver, and finally the opal. INTIARA reveals itself slowly.",
       "home_mat_cta": "Explore the materials",
-      "col_eyebrow": "The collection", "col_title": "A small, considered house",
-      "col_desc": "Seven pieces, made in limited production. Each carries a certificate of origin recording the materials and the hands behind it.",
+      "col_eyebrow": "Collection I", "col_title": "Ópalo Andino",
+      "col_desc": "Five pieces, made in limited production. Each carries the name of an Andean idea and a certificate of origin recording the materials and the hands behind it.",
       "col_cta": "View the collection",
       "val_eyebrow": "What INTIARA protects", "val_title": "Four enduring principles",
       "v1_t": "Designer-led", "v1_p": "Pieces with their own identity — never trends followed without intent.",
@@ -214,11 +230,12 @@
       "v3_t": "Contemporary luxury", "v3_p": "Sophisticated, minimal and timeless — quietly, never loudly.",
       "v4_t": "Responsible production", "v4_p": "Limited runs, conscious sourcing and respect for noble materials.",
       "nw_eyebrow": "Stay close", "nw_title": "Private viewings & new pieces", "nw_p": "Join the list for early access to each release and the stories behind the materials.", "nw_ph": "Your email address", "nw_btn": "Join →",
-      "colp_title": "The collection", "colp_desc": "Seven pieces in limited production — woven in Peru from alpaca, 950 silver and Andean opal.",
+      "colp_title": "Ópalo Andino", "colp_desc": "Five pieces in limited production — woven in Peru from alpaca, 950 silver and Andean opal.",
+      "col_group_label": "The five pieces · Ópalo Andino", "col_choose": "Choose a piece",
       "pdp_crumb_col": "Collection", "pdp_added": "Add to bag",
       "cert_h": "Certificate of origin", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Silver", "cert_opal": "Opal", "cert_artisan": "Artisan", "cert_region": "Region", "cert_loom": "Loom",
-      "cert_alpaca_v": "100% baby alpaca", "cert_interior_v": "Handwoven textile", "cert_silver_v": "950 silver", "cert_opal_v": "Andean opal",
-      "acc_details": "Details & care", "acc_details_p": "Handwoven baby alpaca with a handloomed interior and 950 silver hardware. Store in the provided dust bag; brush gently and keep away from prolonged damp.",
+      "cert_alpaca_v": "Baby Suri alpaca blend", "cert_interior_v": "Handwoven textile", "cert_silver_v": "950 silver", "cert_opal_v": "Andean opal",
+      "acc_details": "Details & care", "acc_details_p": "A Baby Suri alpaca blend over a cowhide structure, with a handwoven interior and 950 silver hardware. Inside: one nylon-zip pocket and two open, alpaca-lined pockets. Any alpaca-hide detail is sourced only from animals that passed naturally of old age. Store in the provided dust bag; brush gently and keep away from prolonged damp.",
       "acc_ship": "Shipping & returns", "acc_ship_p": "Complimentary worldwide express shipping. Made-to-order pieces ship within 5–6 weeks. Returns accepted within 14 days on stocked pieces.",
       "acc_origin": "Origin", "acc_origin_p": "Designed by INTIARA and handcrafted by named artisans in Peru, recorded on each piece’s certificate of origin.",
       "related_t": "You may also like",
@@ -230,7 +247,22 @@
       "story_sig": "— A dream fulfilled, made in Peru.",
       "mission_t": "Mission", "mission_p": "To create contemporary luxury pieces crafted from Peru’s finest materials, where exceptional quality, timeless design and responsible production come together to create objects of beauty, meaning and lasting value — connecting people around the world with the cultural richness of Peru.",
       "vision_t": "Vision", "vision_p": "To become an internationally recognised contemporary luxury brand, transforming Peru’s finest materials and artisanal excellence into exceptional design pieces, championing a new vision of luxury rooted in authenticity, quality, sustainability and timeless beauty.",
-      "matp_title": "Materials & detail", "matp_desc": "INTIARA does not reveal everything at once. The richness of each piece is discovered, layer by layer.",
+      "matp_title": "Noble materials", "matp_desc": "INTIARA does not reveal everything at once. The richness of each piece is discovered, layer by layer.",
+      "procp_title": "Creative process", "procp_desc": "Design comes first. Every INTIARA piece begins as a drawing — then the noble materials are chosen to serve it.",
+      "proc_intro_title": "It begins with a sketch", "proc_intro_p": "Before a single thread is woven, each piece is drawn by hand. The sketch fixes the proportion, the geometry and the details — the silver, the tassel, the stone — long before the materials are chosen.",
+      "proc_sketch_label": "Sketch · SINCHI", "proc_sketch_title": "From drawing to piece", "proc_sketch_p": "The Andean opal is the hero stone of Collection I. SINCHI's geometric front panel is drawn by hand and then interpreted in noble materials — handwoven, structured and finished in 950 silver.",
+      "proc_mats_title": "Read from the sketch", "proc_mats_p": "The annotations on the drawing become the specification for each finished piece.",
+      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "≈61% Baby Suri alpaca, 29% wool, 10% nylon — for softness and natural elegance.",
+      "proc_m_silver_t": "950 silver", "proc_m_silver_p": "Peruvian silver detailing and the branded plate.",
+      "proc_m_telar_t": "Loom", "proc_m_telar_p": "Handwoven by Peruvian artisans; each design exclusive to the collection.",
+      "proc_m_hide_t": "Alpaca hide", "proc_m_hide_p": "Only in artisanal details, from alpacas that passed naturally of old age.",
+      "proc_m_cow_t": "Cowhide", "proc_m_cow_p": "Structural — for resistance, comfort and durability.",
+      "proc_m_pockets_t": "Interior", "proc_m_pockets_p": "One nylon-zip pocket and two open, alpaca-lined pockets.",
+      "proc_gallery_title": "Sketches from the atelier", "proc_gallery_p": "One drawing for each piece in the collection.",
+      "artp_title": "Artisans", "artp_desc": "The hands behind every piece — Peruvian master artisans preserving techniques passed down through generations.",
+      "art_body_t": "Made by hand, in Peru", "art_body_p1": "Every INTIARA piece is made by hand in Peru. Working alongside master artisans in Arequipa, Puno and Lima, we honour techniques passed from generation to generation.", "art_body_p2": "Each piece carries a certificate of origin recording the artisan and the region behind it — because the hands matter as much as the materials.",
+      "packp_title": "The pack", "packp_desc": "Considered packaging, designed to protect the piece and to honour the moment of opening it.",
+      "pack_body_t": "Presented with care", "pack_body_p1": "Each INTIARA piece arrives in packaging designed with the same restraint as the piece itself — protective, tactile and quietly luxurious.", "pack_body_p2": "A dust bag, a certificate of origin and considered materials turn every delivery into part of the experience.",
       "contactp_title": "Contact", "contactp_desc": "For enquiries, private viewings and bespoke requests, we would be delighted to hear from you.",
       "ct_atelier": "Atelier", "ct_atelier_v": "Lima, Peru", "ct_email": "Email", "ct_hours": "Enquiries", "ct_hours_v": "Mon–Fri · 9.00–18.00 (PET)", "ct_social": "Follow",
       "f_name": "Name", "f_email": "Email", "f_subject": "Subject", "f_message": "Message", "f_send": "Send enquiry", "f_sub_general": "General enquiry", "f_sub_bespoke": "Bespoke request", "f_sub_press": "Press", "f_sub_wholesale": "Wholesale",
@@ -242,7 +274,7 @@
     },
     "es": {
       "announce": "Lujo contemporáneo con alma peruana · Envío a todo el mundo",
-      "nav_home": "Inicio", "nav_story": "Historia", "nav_materials": "Materiales", "nav_collection": "Colección", "nav_contact": "Contacto", "nav_shop": "Colección",
+      "nav_home": "Inicio", "nav_story": "Historia", "nav_materials": "Materiales nobles", "nav_collection": "Colección", "nav_process": "Proceso creativo", "nav_artisans": "Artesanos", "nav_pack": "Pack", "nav_cart": "Carro de compras", "nav_contact": "Contacto", "nav_shop": "Colección",
       "filter_all": "Todo", "filter_bag": "Bolsos", "filter_wallet": "Carteras",
       "view_piece": "Ver pieza", "add_bag": "Añadir a la bolsa", "from": "Desde",
       "hero_eyebrow": "Lujo contemporáneo · Diseño de autor", "hero_title": "Diseñado en el Perú,<br>hecho para perdurar",
@@ -255,8 +287,8 @@
       "home_mat_eyebrow": "Materiales y detalle", "home_mat_title": "Descubiertos, capa a capa",
       "home_mat_p": "Primero el diseño, luego la alpaca, el telar interior, la plata 950 y, finalmente, el ópalo. INTIARA se revela despacio.",
       "home_mat_cta": "Explorar los materiales",
-      "col_eyebrow": "La colección", "col_title": "Una casa pequeña y cuidada",
-      "col_desc": "Siete piezas, de producción limitada. Cada una lleva un certificado de origen que registra los materiales y las manos que la hicieron.",
+      "col_eyebrow": "Colección I", "col_title": "Ópalo Andino",
+      "col_desc": "Cinco piezas, de producción limitada. Cada una lleva el nombre de una idea andina y un certificado de origen que registra los materiales y las manos que la hicieron.",
       "col_cta": "Ver la colección",
       "val_eyebrow": "Lo que INTIARA protege", "val_title": "Cuatro principios permanentes",
       "v1_t": "Diseño de autor", "v1_p": "Piezas con identidad propia — nunca tendencias seguidas sin criterio.",
@@ -264,11 +296,12 @@
       "v3_t": "Lujo contemporáneo", "v3_p": "Sofisticado, minimalista y atemporal — en voz baja, nunca alta.",
       "v4_t": "Producción responsable", "v4_p": "Ediciones limitadas, abastecimiento consciente y respeto por los materiales nobles.",
       "nw_eyebrow": "Mantente cerca", "nw_title": "Presentaciones privadas y nuevas piezas", "nw_p": "Únete a la lista para acceso anticipado a cada lanzamiento y las historias detrás de los materiales.", "nw_ph": "Tu correo electrónico", "nw_btn": "Unirme →",
-      "colp_title": "La colección", "colp_desc": "Siete piezas de producción limitada — tejidas en el Perú con alpaca, plata 950 y ópalo andino.",
+      "colp_title": "Ópalo Andino", "colp_desc": "Cinco piezas de producción limitada — tejidas en el Perú con alpaca, plata 950 y ópalo andino.",
+      "col_group_label": "Las cinco piezas · Ópalo Andino", "col_choose": "Elige una pieza",
       "pdp_crumb_col": "Colección", "pdp_added": "Añadir a la bolsa",
       "cert_h": "Certificado de origen", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Plata", "cert_opal": "Ópalo", "cert_artisan": "Artesana", "cert_region": "Región", "cert_loom": "Telar",
-      "cert_alpaca_v": "100% baby alpaca", "cert_interior_v": "Textil tejido a mano", "cert_silver_v": "Plata 950", "cert_opal_v": "Ópalo andino",
-      "acc_details": "Detalles y cuidado", "acc_details_p": "Baby alpaca tejida a mano con interior de telar y herrajes de plata 950. Guárdala en su bolsa de tela; cepilla suavemente y evita la humedad prolongada.",
+      "cert_alpaca_v": "Mezcla Baby Suri alpaca", "cert_interior_v": "Textil tejido a mano", "cert_silver_v": "Plata 950", "cert_opal_v": "Ópalo andino",
+      "acc_details": "Detalles y cuidado", "acc_details_p": "Una mezcla de Baby Suri alpaca sobre una estructura de cuero vacuno, con interior tejido a mano y herrajes de plata 950. En el interior: un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca. Cualquier detalle en piel de alpaca procede solo de animales fallecidos de forma natural durante su vejez. Guárdala en su bolsa de tela; cepilla suavemente y evita la humedad prolongada.",
       "acc_ship": "Envíos y devoluciones", "acc_ship_p": "Envío exprés gratuito a todo el mundo. Las piezas a pedido se envían en 5–6 semanas. Devoluciones dentro de 14 días en piezas en stock.",
       "acc_origin": "Origen", "acc_origin_p": "Diseñada por INTIARA y hecha a mano por artesanas peruanas con nombre propio, registradas en el certificado de origen de cada pieza.",
       "related_t": "También te puede gustar",
@@ -280,7 +313,22 @@
       "story_sig": "— Un sueño hecho realidad, hecho en el Perú.",
       "mission_t": "Misión", "mission_p": "Diseñar piezas de lujo contemporáneo elaboradas con materiales nobles peruanos, donde la calidad excepcional, el diseño atemporal y la producción responsable se unen para crear objetos con significado, belleza y permanencia — conectando a personas de todo el mundo con la riqueza cultural del Perú.",
       "vision_t": "Visión", "vision_p": "Ser una marca internacional de lujo contemporáneo reconocida por transformar los materiales más nobles y la excelencia artesanal del Perú en piezas de diseño excepcionales, defendiendo una nueva visión del lujo basada en la autenticidad, la calidad, la sostenibilidad y la belleza atemporal.",
-      "matp_title": "Materiales y detalle", "matp_desc": "INTIARA no lo revela todo a primera vista. La riqueza de cada pieza se descubre, capa a capa.",
+      "matp_title": "Materiales nobles", "matp_desc": "INTIARA no lo revela todo a primera vista. La riqueza de cada pieza se descubre, capa a capa.",
+      "procp_title": "Proceso creativo", "procp_desc": "Primero el diseño. Cada pieza de INTIARA nace como un boceto — y luego se eligen los materiales nobles para servirlo.",
+      "proc_intro_title": "Empieza con un boceto", "proc_intro_p": "Antes de tejer un solo hilo, cada pieza se dibuja a mano. El boceto fija la proporción, la geometría y los detalles — la plata, la borla, la piedra — mucho antes de elegir los materiales.",
+      "proc_sketch_label": "Boceto · SINCHI", "proc_sketch_title": "Del boceto a la pieza", "proc_sketch_p": "El ópalo andino es la piedra protagonista de la Colección I. El panel geométrico frontal de SINCHI se dibuja a mano y luego se interpreta en materiales nobles — tejido, estructurado y rematado en plata 950.",
+      "proc_mats_title": "Leído del boceto", "proc_mats_p": "Las anotaciones del dibujo se convierten en la ficha técnica de cada pieza terminada.",
+      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "≈61% Baby Suri alpaca, 29% lana, 10% nylon — por su suavidad y elegancia natural.",
+      "proc_m_silver_t": "Plata 950", "proc_m_silver_p": "Detalles en plata peruana y la placa de la marca.",
+      "proc_m_telar_t": "Telar", "proc_m_telar_p": "Tejido a mano por artesanos peruanos; cada diseño exclusivo de la colección.",
+      "proc_m_hide_t": "Piel de alpaca", "proc_m_hide_p": "Solo en detalles artesanales, de alpacas fallecidas de forma natural durante su vejez.",
+      "proc_m_cow_t": "Cuero vacuno", "proc_m_cow_p": "Estructural — resistencia, confort y durabilidad.",
+      "proc_m_pockets_t": "Interior", "proc_m_pockets_p": "Un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca.",
+      "proc_gallery_title": "Bocetos del atelier", "proc_gallery_p": "Un boceto por cada pieza de la colección.",
+      "artp_title": "Artesanos", "artp_desc": "Las manos detrás de cada pieza — maestros artesanos peruanos que preservan técnicas transmitidas de generación en generación.",
+      "art_body_t": "Hecho a mano, en el Perú", "art_body_p1": "Cada pieza de INTIARA se hace a mano en el Perú. Junto a maestros artesanos en Arequipa, Puno y Lima, honramos técnicas transmitidas de generación en generación.", "art_body_p2": "Cada pieza lleva un certificado de origen que registra al artesano y la región que la hicieron — porque las manos importan tanto como los materiales.",
+      "packp_title": "El pack", "packp_desc": "Un empaque cuidado, diseñado para proteger la pieza y honrar el momento de abrirla.",
+      "pack_body_t": "Presentado con cuidado", "pack_body_p1": "Cada pieza de INTIARA llega en un empaque diseñado con la misma sobriedad que la pieza — protector, táctil y discretamente lujoso.", "pack_body_p2": "Una bolsa de tela, un certificado de origen y materiales cuidados convierten cada entrega en parte de la experiencia.",
       "contactp_title": "Contacto", "contactp_desc": "Para consultas, presentaciones privadas y pedidos a medida, será un placer escucharte.",
       "ct_atelier": "Atelier", "ct_atelier_v": "Lima, Perú", "ct_email": "Correo", "ct_hours": "Consultas", "ct_hours_v": "Lun–Vie · 9.00–18.00 (PET)", "ct_social": "Síguenos",
       "f_name": "Nombre", "f_email": "Correo", "f_subject": "Asunto", "f_message": "Mensaje", "f_send": "Enviar consulta", "f_sub_general": "Consulta general", "f_sub_bespoke": "Pedido a medida", "f_sub_press": "Prensa", "f_sub_wholesale": "Mayoristas",
