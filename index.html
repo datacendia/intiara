@@ -14,12 +14,9 @@
   /* ===== Home (Gold Maison) — page-specific ===== */
   .hero{padding:78px 0 64px}
   .hero-img{max-width:600px;aspect-ratio:16/10}
-  .dp{position:relative;min-height:74vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:90px 44px;background:var(--choco-2)}
-  .dp .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-  .dp-scrim{position:absolute;inset:0;z-index:2;background:rgba(30,22,15,.40)}
-  .dp-inner{position:relative;z-index:3}
-  .dp .eyebrow{display:block;font-size:13px;letter-spacing:.42em;color:#fff;opacity:.9}
-  .dp .dp-line{font-family:var(--ser);font-style:italic;font-size:clamp(30px,4.6vw,56px);color:#fff;max-width:900px;margin:24px auto 0;line-height:1.28}
+  .dp{text-align:center;padding:130px 44px;background:var(--marfil-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .dp .eyebrow{display:block;font-size:13px;letter-spacing:.42em}
+  .dp .dp-line{font-family:var(--ser);font-style:italic;font-size:clamp(30px,4.6vw,56px);color:var(--choco);max-width:900px;margin:24px auto 0;line-height:1.28}
   .vals-band{background:var(--marfil-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .vals-band .wrap{padding:82px 44px;text-align:center}
   .vals-band .values-grid{max-width:1000px;margin:28px auto 0;text-align:center}
@@ -29,7 +26,7 @@
   footer.foot-maison .mark{font-family:var(--disp);font-size:24px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
   footer.foot-maison p{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;margin-top:14px}
   /* ===== full-bleed editorial cover (home top section) ===== */
-  .home-cover{position:relative;height:auto;min-height:82vh;width:100%;overflow:hidden;background:linear-gradient(160deg,#F6F1E6,#ECE4D3)}
+  .home-cover{position:relative;height:100vh;min-height:620px;width:100%;overflow:hidden;background:linear-gradient(120deg,#ECE6D8,#D8CFBC)}
   .home-cover .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
   .cover-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(245,240,229,.78) 0%,rgba(245,240,229,.30) 40%,rgba(245,240,229,0) 66%),linear-gradient(180deg,rgba(245,240,229,.35),rgba(245,240,229,0) 26%)}
   body.cover header#hdr{position:fixed;top:0;left:0;right:0;height:auto;background:transparent;border:none;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:24px 50px;transition:background .45s var(--ease),padding .45s var(--ease),color .45s var(--ease);color:var(--choco)}
@@ -46,7 +43,7 @@
   body.cover header#hdr .lang span{color:currentColor;opacity:.45}
   body.cover header#hdr .icon-btn{color:inherit}
   body.cover header#hdr.scrolled{background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 50px}
-  .cover-text{position:absolute;left:0;right:0;top:52%;transform:translateY(-50%);z-index:6;text-align:center;padding:0 44px;color:var(--choco)}
+  .cover-text{position:absolute;left:0;bottom:14%;z-index:6;max-width:640px;padding:0 44px 0 58px;color:var(--choco)}
   .cover-text .eyebrow{display:block;color:var(--choco);opacity:.85;margin-bottom:20px}
   .cover-text h1{font-family:var(--ser);font-weight:400;font-size:clamp(42px,6vw,80px);line-height:1.02;letter-spacing:.005em;color:var(--choco)}
   .cover-text .cover-sub{font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--choco);opacity:.85;margin-top:22px}
@@ -63,7 +60,7 @@
     body.cover #navLinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 24px;gap:0;z-index:40}
     body.cover #navLinks.open{display:flex}
     body.cover #navLinks a{padding:11px 0;color:var(--choco);font-size:12px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--line)}
-    .cover-text{padding:0 24px}
+    .cover-text{bottom:12%;padding:0 24px}
   }
 </style>
 </head>
@@ -80,7 +77,7 @@
 <line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
 </g></defs></svg>
 
-<div class="home-cover">
+<div class="home-cover" data-img="hero">
   <span class="cover-scrim"></span>
   <header id="hdr">
     <div class="cover-left">
@@ -121,12 +118,9 @@
   <a href="#philosophy" class="cover-arrow" aria-label="Scroll down"><svg viewBox="0 0 24 48" fill="none" stroke="currentColor" stroke-width="1.2"><line x1="12" y1="2" x2="12" y2="40"/><path d="M5 33l7 8 7-8"/></svg></a>
 </div>
 
-<section class="dp reveal" id="philosophy" data-img="hero">
-  <span class="dp-scrim"></span>
-  <div class="dp-inner">
-    <p class="eyebrow" data-i18n="dp_eyebrow">Design philosophy</p>
-    <p class="dp-line" data-i18n="dp_line">Beauty is discovered in the details.</p>
-  </div>
+<section class="dp reveal" id="philosophy">
+  <p class="eyebrow" data-i18n="dp_eyebrow">Design philosophy</p>
+  <p class="dp-line" data-i18n="dp_line">Beauty is discovered in the details.</p>
 </section>
 
 <footer class="foot-maison"><div class="mark">INTIARA</div><p data-i18n="ft_tag">Lujo contemporáneo con alma peruana</p></footer>
