@@ -26,8 +26,8 @@ Legend: ✅ done · 🟡 partial (needs photos or copy) · ⬜ not started
 
 ## 2. Collection I – Andean Opal
 - [x] ✅ Five models with name + meaning; each opens its own page
-- [ ] 🟡 Collection presentation + inspiration intro
-- [ ] 🟡 Group shot of all five pieces (placeholder in place)
+- [x] ✅ Collection presentation + inspiration intro
+- [ ] ⬜ Group shot of all five pieces (placeholder in place — needs photo)
 
 ## 3. Noble Materials (pro photo + short note each)
 - [x] 🟡 Baby Suri Alpaca
@@ -52,7 +52,8 @@ Legend: ✅ done · 🟡 partial (needs photos or copy) · ⬜ not started
 - [x] ✅ Closing line
 
 ## 6. Our Artisans
-- [ ] 🟡 Homage tone; few photos, much respect (page exists, needs final copy + photos)
+- [x] ✅ Homage tone copy (people, not production) + centred tribute quote
+- [ ] ⬜ Few, respectful photos (portraits of artisans)
 
 ## 7. The Packaging Experience
 - [x] 🟡 Reframed as the experience (box, paper, dust bag, cards, certificates, monogram, the opening)
