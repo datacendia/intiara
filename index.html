@@ -31,7 +31,9 @@
   .cover-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(245,240,229,.78) 0%,rgba(245,240,229,.30) 40%,rgba(245,240,229,0) 66%),linear-gradient(180deg,rgba(245,240,229,.35),rgba(245,240,229,0) 26%)}
   body.cover header#hdr{position:fixed;top:0;left:0;right:0;height:auto;background:transparent;border:none;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:24px 50px;transition:background .45s var(--ease),padding .45s var(--ease),color .45s var(--ease);color:var(--choco)}
   body.cover header#hdr .cover-left,body.cover header#hdr .cover-right{display:flex;align-items:center;gap:30px;flex:1}
-  body.cover header#hdr .cover-right{justify-content:flex-end}
+  body.cover header#hdr .cover-left{justify-content:flex-end;padding-right:140px}
+  body.cover header#hdr .cover-right{justify-content:flex-start;padding-left:140px}
+  body.cover header#hdr .cover-right .lang{margin-left:auto}
   .cnav{display:flex;gap:30px}
   .cnav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:inherit;white-space:nowrap}
   .cnav a:hover{color:var(--gold)}
