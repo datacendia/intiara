@@ -14,6 +14,9 @@
   /* ===== Home (Gold Maison) — page-specific ===== */
   .hero{padding:78px 0 64px}
   .hero-img{max-width:600px;aspect-ratio:16/10}
+  .dp{text-align:center;padding:110px 44px 100px}
+  .dp .eyebrow{display:block}
+  .dp .dp-line{font-family:var(--ser);font-style:italic;font-size:clamp(24px,3.2vw,40px);color:var(--choco);max-width:780px;margin:20px auto 0;line-height:1.35}
   .vals-band{background:var(--marfil-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .vals-band .wrap{padding:82px 44px;text-align:center}
   .vals-band .values-grid{max-width:1000px;margin:28px auto 0;text-align:center}
@@ -22,34 +25,46 @@
   footer.foot-maison{background:var(--marfil-2);color:var(--mut);text-align:center;border-top:4px solid var(--gold);padding:64px 44px}
   footer.foot-maison .mark{font-family:var(--disp);font-size:24px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
   footer.foot-maison p{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;margin-top:14px}
-  footer.foot-maison .foot-cart{display:inline-block;margin-top:22px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:4px}
-  /* full-screen cover hero (home) */
-  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  body.home-cover header#hdr{position:absolute;top:0;left:0;right:0;background:transparent;border-top:none;border-bottom:none;z-index:20}
-  body.home-cover header#hdr .nav{padding:30px 44px 20px}
-  body.home-cover header#hdr .logo .ia,body.home-cover header#hdr .logo .mark{color:#fff}
-  body.home-cover header#hdr .nav-links a{color:rgba(255,255,255,.82)}
-  body.home-cover header#hdr .nav-links a:hover,body.home-cover header#hdr .nav-links a.active{color:#fff}
-  body.home-cover header#hdr .lang button{color:rgba(255,255,255,.7)}
-  body.home-cover header#hdr .lang button.active{color:#fff}
-  body.home-cover header#hdr .lang span{color:rgba(255,255,255,.45)}
-  body.home-cover header#hdr .icon-btn,body.home-cover header#hdr .menu-toggle{color:#fff}
-  body.home-cover header#hdr .cart-count{background:#fff;color:var(--choco)}
-  .hero-cover{position:relative;height:100vh;min-height:600px;padding:0;overflow:hidden;background:var(--marfil-2)}
-  .hero-cover .hero-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(102deg,rgba(24,17,11,.62),rgba(24,17,11,.22) 42%,rgba(24,17,11,0) 72%),linear-gradient(180deg,rgba(24,17,11,.34),rgba(24,17,11,0) 20%)}
-  .hero-cover .hero-cover-inner{position:absolute;inset:0;z-index:3;display:flex;align-items:center}
-  .hero-cover .hco{max-width:1180px;width:100%;margin:0 auto;padding:0 44px;color:#fff}
-  .hero-cover .hco .eyebrow{display:block;color:rgba(255,255,255,.82);margin-bottom:20px}
-  .hero-cover .hco h1{font-family:var(--disp);color:#fff;font-weight:400;font-size:clamp(40px,5.4vw,76px);letter-spacing:.02em;line-height:1.12;max-width:640px}
-  .hero-cover .hco .deck{font-family:var(--ser);font-style:italic;color:rgba(255,255,255,.92);font-size:clamp(19px,2.2vw,27px);max-width:460px;margin:24px 0 0;line-height:1.4}
-  .hero-cover .hco .hero-cta-btn{margin-top:32px;border-color:#fff;color:#fff}
-  .hero-cover .hco .hero-cta-btn:hover{background:#fff;color:var(--choco)}
-  .hero-cover .hero-scroll{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;color:#fff;opacity:.85;animation:heroArrow 2.4s ease-in-out infinite}
-  .hero-cover .hero-scroll svg{width:22px;height:42px}
-  @keyframes heroArrow{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+  /* ===== full-bleed editorial cover (home top section) ===== */
+  .home-cover{position:relative;height:100vh;min-height:620px;width:100%;overflow:hidden;background:linear-gradient(120deg,#ECE6D8,#D8CFBC)}
+  .home-cover .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .cover-scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(245,240,229,.78) 0%,rgba(245,240,229,.30) 40%,rgba(245,240,229,0) 66%),linear-gradient(180deg,rgba(245,240,229,.35),rgba(245,240,229,0) 26%)}
+  body.cover header#hdr{position:fixed;top:0;left:0;right:0;height:auto;background:transparent;border:none;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:24px 50px;transition:background .45s var(--ease),padding .45s var(--ease),color .45s var(--ease);color:var(--choco)}
+  body.cover header#hdr .cover-left,body.cover header#hdr .cover-right{display:flex;align-items:center;gap:30px;flex:1}
+  body.cover header#hdr .cover-left{justify-content:flex-end;padding-right:140px}
+  body.cover header#hdr .cover-right{justify-content:flex-start;padding-left:140px}
+  body.cover header#hdr .cover-right .lang{margin-left:auto}
+  .cnav{display:flex;gap:30px}
+  .cnav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:inherit;white-space:nowrap}
+  .cnav a:hover{color:var(--gold)}
+  .cover-logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:var(--disp);font-size:25px;letter-spacing:.42em;text-transform:uppercase;color:inherit;line-height:1;padding-left:.2em}
+  body.cover header#hdr .lang button{color:inherit}
+  body.cover header#hdr .lang button.active{color:var(--gold)}
+  body.cover header#hdr .lang span{color:currentColor;opacity:.45}
+  body.cover header#hdr .icon-btn{color:inherit}
+  body.cover header#hdr.scrolled{background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 50px}
+  .cover-text{position:absolute;left:0;bottom:14%;z-index:6;max-width:640px;padding:0 44px 0 58px;color:var(--choco)}
+  .cover-text .eyebrow{display:block;color:var(--choco);opacity:.85;margin-bottom:20px}
+  .cover-text h1{font-family:var(--ser);font-weight:400;font-size:clamp(42px,6vw,80px);line-height:1.02;letter-spacing:.005em;color:var(--choco)}
+  .cover-text .cover-sub{font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--choco);opacity:.85;margin-top:22px}
+  .cover-link{display:inline-block;margin-top:26px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--choco);border-bottom:1px solid var(--gold);padding-bottom:6px;transition:.3s}
+  .cover-link:hover{color:var(--gold)}
+  .cover-arrow{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:6;color:var(--choco);opacity:.65}
+  .cover-arrow svg{width:20px;height:42px}
+  body.cover #navLinks{display:none}
+  @media(max-width:960px){
+    .cnav,body.cover header#hdr .lang{display:none}
+    body.cover header#hdr{padding:14px 24px}
+    body.cover .menu-toggle{display:flex;position:static;color:inherit}
+    .cover-logo{font-size:20px}
+    body.cover #navLinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--marfil-2);border-bottom:1px solid var(--line);padding:14px 24px;gap:0;z-index:40}
+    body.cover #navLinks.open{display:flex}
+    body.cover #navLinks a{padding:11px 0;color:var(--choco);font-size:12px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+    .cover-text{bottom:12%;padding:0 24px}
+  }
 </style>
 </head>
-<body class="maison home-cover">
+<body class="maison cover">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="iamono">
 <circle cx="54" cy="16" r="5.4" fill="currentColor" stroke="none"/>
 <line x1="42" y1="34" x2="42" y2="104" stroke="currentColor" stroke-width="6"/>
@@ -62,33 +77,50 @@
 <line x1="85" y1="104" x2="99" y2="104" stroke="currentColor" stroke-width="5"/>
 </g></defs></svg>
 
-<header id="hdr"><div class="wrap nav">
-  <button class="menu-toggle" id="menuToggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
-  <a href="index.html" class="logo" aria-label="INTIARA home"><svg class="ia" viewBox="0 0 133 120" fill="none" aria-hidden="true"><use href="#iamono"/></svg><span class="mark">INTIARA</span></a>
-  <nav class="nav-links" id="navLinks">
-    <a href="story.html" data-i18n="nav_story">Story</a>
-    <a href="collection.html" data-i18n="nav_collection">Collection</a>
-    <a href="materials.html" data-i18n="nav_materials">Noble materials</a>
-    <a href="process.html" data-i18n="nav_process">Creative process</a>
-    <a href="artisans.html" data-i18n="nav_artisans">Artisans</a>
-    <a href="pack.html" data-i18n="nav_pack">Pack</a>
-    <a href="contact.html" data-i18n="nav_contact">Contact</a>
-  </nav>
-  <div class="nav-actions">
-    <div class="lang"><button id="langEn" class="active">EN</button><span>/</span><button id="langEs">ES</button></div>
-    <button class="icon-btn js-cart-open" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" id="cartCount">0</span></button>
+<div class="home-cover" data-img="hero">
+  <span class="cover-scrim"></span>
+  <header id="hdr">
+    <div class="cover-left">
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      <nav class="cnav">
+        <a href="collection.html" data-i18n="nav_collection">Collection</a>
+        <a href="materials.html" data-i18n="nav_materials">Noble materials</a>
+        <a href="process.html" data-i18n="nav_process">Creative process</a>
+        <a href="story.html" data-i18n="nav_story">Story</a>
+      </nav>
+    </div>
+    <a href="index.html" class="cover-logo" aria-label="INTIARA home"><span class="mark">INTIARA</span></a>
+    <div class="cover-right">
+      <nav class="cnav">
+        <a href="artisans.html" data-i18n="nav_artisans">Artisans</a>
+        <a href="pack.html" data-i18n="nav_pack">Pack</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="lang"><button id="langEn" class="active">EN</button><span>/</span><button id="langEs">ES</button></div>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="collection.html" data-i18n="nav_collection">Collection</a>
+      <a href="materials.html" data-i18n="nav_materials">Noble materials</a>
+      <a href="process.html" data-i18n="nav_process">Creative process</a>
+      <a href="story.html" data-i18n="nav_story">Story</a>
+      <a href="artisans.html" data-i18n="nav_artisans">Artisans</a>
+      <a href="pack.html" data-i18n="nav_pack">Pack</a>
+      <a href="#" class="js-cart-open" data-i18n="nav_cart">Shopping cart</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </header>
+  <div class="cover-text">
+    <p class="eyebrow" data-i18n="hero_eyebrow">Authorial design</p>
+    <h1 data-i18n="hero_title">Peru's Finest<br>Natural Materials.</h1>
+    <p class="cover-sub" data-i18n="hero_stmt">Contemporary luxury</p>
+    <a href="collection.html" class="cover-link" data-i18n="hero_cta">Explore the Collection</a>
   </div>
-</div></header>
+  <a href="#philosophy" class="cover-arrow" aria-label="Scroll down"><svg viewBox="0 0 24 48" fill="none" stroke="currentColor" stroke-width="1.2"><line x1="12" y1="2" x2="12" y2="40"/><path d="M5 33l7 8 7-8"/></svg></a>
+</div>
 
-<section class="hero-cover photo" data-img="hero">
-  <span class="hero-scrim" aria-hidden="true"></span>
-  <div class="hero-cover-inner"><div class="hco reveal">
-    <p class="eyebrow" data-i18n="hero_eyebrow">Contemporary luxury · Designer pieces</p>
-    <h1 data-i18n="hero_title">Designed in Peru,<br>made to endure</h1>
-    <p class="deck" data-i18n="hero_stmt">INTIARA transforms Peru's finest materials into designer pieces — discovered, layer by layer.</p>
-    <a href="collection.html" class="btn hero-cta-btn" data-i18n="hero_cta">Explore the collection</a>
-  </div></div>
-  <a class="hero-scroll" href="#collection" aria-label="Scroll to collection"><svg viewBox="0 0 24 44" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="33"/><path d="M5 26l7 8 7-8"/></svg></a>
+<section class="dp wrap reveal" id="philosophy">
+  <p class="eyebrow" data-i18n="dp_eyebrow">Design philosophy</p>
+  <p class="dp-line" data-i18n="dp_line">Beauty is discovered in the details.</p>
 </section>
 
 <section class="vals-band"><div class="wrap reveal">
@@ -102,19 +134,9 @@
   </div>
 </div></section>
 
-<div class="wrap"><div class="greca-divider reveal" style="margin:64px auto 0"><span class="ln"></span><span class="greca-mark"></span><span class="ln"></span></div></div>
+<footer class="foot-maison"><div class="mark">INTIARA</div><p data-i18n="ft_tag">Lujo contemporáneo con alma peruana</p></footer>
 
-<section class="sec wrap" id="collection" style="padding-top:70px">
-  <div class="sec-head center reveal">
-    <p class="eyebrow" data-i18n="col_eyebrow">Collection I</p>
-    <h2 data-i18n="col_title">Ópalo Andino</h2>
-    <p data-i18n="col_desc">Five pieces, made in limited production. Each carries the name of an Andean idea and a certificate of origin recording the materials and the hands behind it.</p>
-  </div>
-  <div class="grid" id="featuredGrid"></div>
-  <div class="col-foot reveal"><a href="collection.html" class="btn" data-i18n="col_cta">View the collection</a></div>
-</section>
-
-<footer class="foot-maison"><div class="mark">INTIARA</div><p data-i18n="ft_tag">Lujo contemporáneo con alma peruana</p><a href="#" class="js-cart-open foot-cart" data-i18n="nav_cart">Shopping cart</a></footer>
+<button class="cart-fab js-cart-open" aria-label="Shopping bag"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" id="cartCount">0</span></button>
 
 <script src="assets/js/intiara.js"></script>
 </body>
