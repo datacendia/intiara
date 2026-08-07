@@ -199,7 +199,18 @@ function closeCart(){document.getElementById('drawer').classList.remove('open');
 
 /* ---- misc ---- */
 function subscribe(e){e.preventDefault();e.target.reset();toast(t('toast_sub'));}
-function sendContact(e){e.preventDefault();e.target.reset();toast(t('contact_sent'));}
+function sendContact(e){
+  e.preventDefault();
+  var f=e.target, btn=f.querySelector('button[type=submit]');
+  var get=function(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value:'';};
+  var payload={name:get('name'),email:get('email'),subject:get('subject'),message:get('message'),company:get('company')};
+  if(btn)btn.disabled=true;
+  fetch('/.netlify/functions/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+    .then(function(r){return r.ok?r.json():r.json().then(function(j){throw new Error((j&&j.error)||'error');});})
+    .then(function(){f.reset();toast(t('contact_sent'));})
+    .catch(function(){toast(t('contact_error'));})
+    .then(function(){if(btn)btn.disabled=false;});
+}
 var toastTimer;function toast(msg){var el=document.getElementById('toast');if(!el)return;el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove('show');},2600);}
 function observeReveal(){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});document.querySelectorAll('.reveal:not(.in)').forEach(function(el){io.observe(el);});}
 

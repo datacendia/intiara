@@ -1,0 +1,8 @@
+# Netlify configuration for INTIARA (static site + serverless functions)
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

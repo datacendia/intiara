@@ -56,15 +56,16 @@
   </div>
   <div class="reveal">
     <form id="contactForm">
-      <div class="field"><label data-i18n="f_name">Name</label><input type="text" required /></div>
-      <div class="field"><label data-i18n="f_email">Email</label><input type="email" required /></div>
-      <div class="field"><label data-i18n="f_subject">Subject</label><select>
+      <div class="field"><label data-i18n="f_name">Name</label><input type="text" name="name" required /></div>
+      <div class="field"><label data-i18n="f_email">Email</label><input type="email" name="email" required /></div>
+      <div class="field"><label data-i18n="f_subject">Subject</label><select name="subject">
         <option data-i18n="f_sub_general">General enquiry</option>
         <option data-i18n="f_sub_bespoke">Bespoke request</option>
         <option data-i18n="f_sub_press">Press</option>
         <option data-i18n="f_sub_wholesale">Wholesale</option>
       </select></div>
-      <div class="field"><label data-i18n="f_message">Message</label><textarea required></textarea></div>
+      <div class="field"><label data-i18n="f_message">Message</label><textarea name="message" required></textarea></div>
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
       <button type="submit" class="btn btn-fill" data-i18n="f_send">Send enquiry</button>
     </form>
   </div>
