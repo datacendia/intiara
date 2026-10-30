@@ -12,6 +12,10 @@ function findP(id){for(var i=0;i<PRODUCTS.length;i++){if(PRODUCTS[i].id===id)ret
 function qparam(k){return new URLSearchParams(location.search).get(k);}
 function tint(hex){hex=hex||'#8a7d6b';var r=parseInt(hex.substr(1,2),16),g=parseInt(hex.substr(3,2),16),b=parseInt(hex.substr(5,2),16);r=Math.round(r+(238-r)*0.78);g=Math.round(g+(234-g)*0.78);b=Math.round(b+(220-b)*0.78);return 'rgb('+r+','+g+','+b+')';}
 function escAttr(s){return (''+(s||'')).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function L(o){return o?(o[lang]||o.en||''):'';}
+function lines(s){return (s||'').split('\n').map(function(x){return x.trim();}).filter(Boolean);}
+function paras(s){return (s||'').split(/\n\s*\n/).map(function(x){return x.trim();}).filter(Boolean).map(function(x){return '<p>'+escAttr(x)+'</p>';}).join('');}
+function list(a){return a.length?'<ul class="pd-list">'+a.map(function(x){return '<li>'+escAttr(x)+'</li>';}).join('')+'</ul>':'';}
 function pImgs(p){return (p&&p.images&&p.images.length)?p.images:[];}
 
 /* ---- content loading ---- */
@@ -113,7 +117,18 @@ function renderProductDetail(){
   var set=function(i,v){var el=document.getElementById(i);if(el)el.textContent=v;};
   set('pCat',p.cat[lang]||p.cat.en);set('pName',p.name);set('pPrice',euro(p.price));
   var cw=document.getElementById('pColour');if(cw)cw.innerHTML='<span class="swatch" style="background:'+p.hex+'"></span>'+(p.colour[lang]||p.colour.es);
-  set('pDesc',p.desc[lang]||p.desc.en);
+  var pd=document.getElementById('pDesc');if(pd)pd.innerHTML=paras(L(p.long)||L(p.desc));
+  var det=document.getElementById('pDetails');
+  if(det){
+    var mats=lines(L(p.materialsList)),feats=lines(L(p.features)),dm=p.dims||{};
+    var dims=[['pd_w',dm.w],['pd_h',dm.h],['pd_d',dm.d],['pd_weight',dm.weight]].filter(function(r){return r[1];});
+    det.innerHTML=(mats.length||feats.length)
+      ? (mats.length?'<h4 class="pd-h">'+t('pd_materials')+'</h4>'+list(mats):'')
+        +(feats.length?'<h4 class="pd-h">'+t('pd_design')+'</h4>'+list(feats):'')
+        +(dims.length?'<h4 class="pd-h">'+t('pd_dims')+'</h4><ul class="pd-list">'+dims.map(function(r){return '<li>'+t(r[0])+': '+escAttr(r[1])+'</li>';}).join('')+'</ul>':'')
+      : '<p>'+t('acc_details_p')+'</p>';
+  }
+  var care=document.getElementById('pCare');if(care)care.innerHTML='<p class="pd-intro">'+t('care_intro')+'</p>'+list(lines(t('care_list')));
   var pq=document.getElementById('pQuote');if(pq){var q=p.quote?(p.quote[lang]||p.quote.en):'';pq.textContent=q;pq.style.display=q?'':'none';}
   var imgs=pImgs(p);
   var main=document.getElementById('pMain');

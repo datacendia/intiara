@@ -41,7 +41,20 @@
       "desc": {
         "en": "The most architectural piece of the collection. SINCHI represents the woman who moves forward with assurance, without any need to draw attention. Its geometric lines and firm structure convey stability, while the softness of Baby Suri Alpaca balances that presence with elegance. Designed to accompany the everyday with sophistication and character.",
         "es": "La pieza más arquitectónica de la colección. SINCHI representa a la mujer que avanza con seguridad, sin necesidad de llamar la atención. Sus líneas geométricas y su estructura firme transmiten estabilidad, mientras la suavidad de la Baby Suri Alpaca equilibra esa presencia con elegancia. Diseñada para acompañar el ritmo cotidiano con sofisticación y carácter."
-      }
+      },
+      "long": {
+        "en": "Sinchi is a structured, spacious handbag crafted in Baby Suri Alpaca, its exterior revealing subtle geometric motifs in high relief, outlined in delicate topstitching. Its design pairs the nobility of its materials with careful attention to detail and an elegance expressed without excess.\n\nInside, a handwoven artisanal textile lends texture and character to a piece made to accompany every moment of the day. Its leather handles, lightly padded for added comfort, allow it to be carried in the hand or over the forearm.\n\nAs a signature detail, an alpaca-hide tassel joins a Peruvian Andean opal, finished in 950 silver and a fine leather cord. A meeting of materials that honours the identity and artisanal richness of the piece.",
+        "es": "Sinchi es una cartera estructurada y espaciosa, elaborada en Baby Suri Alpaca, cuya superficie exterior revela sutiles dibujos geométricos en alto relieve, delineados mediante delicados pespuntes. Su diseño combina la nobleza de los materiales con una cuidada atención al detalle y una elegancia que se expresa sin excesos.\n\nEn su interior, el telar de elaboración artesanal aporta textura y carácter a una pieza concebida para acompañar distintos momentos del día. Sus asas de cuero, ligeramente acolchadas para brindar mayor comodidad, permiten llevarla tanto en la mano como sobre el antebrazo.\n\nComo detalle distintivo, una borla de piel de alpaca se une a un ópalo andino peruano, acompañado de terminaciones en plata 950 y un fino cordón de cuero. Un encuentro de materiales que pone en valor la identidad y la riqueza artesanal de la pieza."
+      },
+      "materialsList": {
+        "en": "Exterior: Baby Suri Alpaca.\nLining: handwoven artisanal textile.\nHandles: leather.\nLabel: engraved cowhide leather, attached to the woven lining.\nOrnament: alpaca-hide tassel, Peruvian Andean opal, 950 silver finishings and leather cord.",
+        "es": "Exterior: Baby Suri Alpaca.\nForro interior: telar de elaboración artesanal.\nAsas: cuero.\nEtiqueta: cuero vacuno grabado, adherido al telar.\nAdorno: borla de piel de alpaca, ópalo andino peruano, terminaciones en plata 950 y cordón de cuero."
+      },
+      "features": {
+        "en": "Structured, spacious handbag.\nExterior with geometric motifs in high relief, created with topstitching.\nLightly padded handles for added comfort, to carry in the hand or over the forearm.\nTwo interior patch pockets in alpaca, stitched onto the woven lining and finished with a fine leather binding.\nOne discreet exterior welt pocket, concealed from view, made in lightweight lining fabric with an 18 cm nylon zip.",
+        "es": "Cartera estructurada y espaciosa.\nSuperficie exterior con dibujos geométricos en alto relieve, realizados mediante pespuntes.\nAsas ligeramente acolchadas para mayor comodidad, con opción de llevarla en la mano o sobre el antebrazo.\nDos bolsillos interiores tipo parche, elaborados en alpaca y cosidos sobre el telar, con fino sesgo de cuero.\nUn bolsillo exterior tipo ojal, discreto y no visible desde el exterior, confeccionado en tela de forro liviana y provisto de un cierre de nylon de 18 cm."
+      },
+      "dims": { "w": "", "h": "", "d": "", "weight": "" }
     },
     {
       "id": "allin-sonqo",
@@ -102,7 +115,7 @@
       "loom": "AR-018",
       "images": [],
       "desc": {
-        "en": "The iconic piece of the Ópalo Andino collection. Inspired by a flower that begins to open with the first light of day, ILLARI represents blossoming, delicacy and the beauty that emerges naturally. Its heart, formed of Andean opals, symbolises the singular inner light every woman carries with her.",
+        "en": "The iconic piece of the Andean Opal collection. Inspired by a flower that begins to open with the first light of day, ILLARI represents blossoming, delicacy and the beauty that emerges naturally. Its heart, formed of Andean opals, symbolises the singular inner light every woman carries with her.",
         "es": "La pieza icónica de la Colección Ópalo Andino. Inspirada en una flor que comienza a abrirse con la primera luz del día, ILLARI representa el florecimiento, la delicadeza y la belleza que emerge de manera natural. Su centro, formado por ópalos andinos, simboliza esa luz interior única que cada mujer lleva consigo."
       }
     },
@@ -202,9 +215,9 @@
       "nav_home": "Home", "nav_story": "The House", "nav_materials": "Noble materials", "nav_collection": "Collection", "nav_process": "Creative process", "nav_artisans": "Artisans", "nav_pack": "Packaging", "nav_cart": "Shopping cart", "nav_contact": "Contact", "nav_shop": "Collection",
       "filter_all": "All", "filter_bag": "Bags", "filter_wallet": "Wallets",
       "view_piece": "View piece", "add_bag": "Add to bag", "from": "From",
-      "hero_eyebrow": "Authorial design", "hero_title": "Peru's Finest<br>Natural Materials.",
-      "hero_stmt": "Contemporary luxury",
-      "hero_cta": "Explore the Collection", "ph_hero": "Editorial image · woman + handbag · European setting", "ph_founder": "Portrait · the founder",
+      "hero_eyebrow": "INTIARA", "hero_title": "Contemporary Luxury,<br>Rooted in Peru.",
+      "hero_stmt": "A contemporary luxury brand transforming Peru's finest materials into pieces of authorial design.",
+      "hero_cta": "Discover the Collection", "ph_hero": "Editorial image · woman + handbag · European setting", "ph_founder": "Portrait · the founder",
       "dp_eyebrow": "Design philosophy", "dp_line": "Beauty is discovered in the details.",
       "strip": "Contemporary design, created from the finest materials of Peru.",
       "home_story_eyebrow": "Our story", "home_story_title": "A bridge between tradition and design",
@@ -213,7 +226,7 @@
       "home_mat_eyebrow": "Materials & detail", "home_mat_title": "Discovered, layer by layer",
       "home_mat_p": "First the design, then the alpaca, the woven interior, the 950 silver, and finally the opal. INTIARA reveals itself slowly.",
       "home_mat_cta": "Explore the materials",
-      "col_eyebrow": "Collection I", "col_title": "Ópalo Andino",
+      "col_eyebrow": "Collection I", "col_title": "Andean Opal",
       "col_desc": "Five pieces, made in limited production. Each carries the name of an Andean idea and a certificate of origin recording the materials and the hands behind it.",
       "col_cta": "View the collection",
       "val_eyebrow": "What INTIARA protects", "val_title": "Four enduring principles",
@@ -222,13 +235,16 @@
       "v3_t": "Contemporary luxury", "v3_p": "Sophisticated, minimal and timeless — quietly, never loudly.",
       "v4_t": "Responsible production", "v4_p": "Limited runs, conscious sourcing and respect for noble materials.",
       "nw_eyebrow": "Stay close", "nw_title": "Private viewings & new pieces", "nw_p": "Join the list for early access to each release and the stories behind the materials.", "nw_ph": "Your email address", "nw_btn": "Join →",
-      "colp_title": "Ópalo Andino", "colp_desc": "Five pieces in limited production — woven in Peru from alpaca, 950 silver and Andean opal.",
-      "col_group_label": "The five pieces · Ópalo Andino", "col_choose": "Choose a piece",
-      "col_intro": "Ópalo Andino celebrates the light that comes from within. Five handbags, five essential qualities of a woman — serene strength, harmony, authenticity, inner light and fulfilment — each carrying the Andean opal, our hero stone.",
+      "colp_title": "Andean Opal", "colp_desc": "Five pieces. Five expressions of inner light.",
+      "col_group_label": "The five pieces · Andean Opal", "col_choose": "Discover the five designs.",
+      "col_intro": "<p>INTIARA’s first collection draws inspiration from the richness of Peruvian materials and a contemporary vision of elegance.</p><p>Andean Opal brings together five designer handbags, each conceived to express a different feminine quality: serene strength, harmony, authenticity, inner light and fulfillment.</p><p>Baby Suri Alpaca, handcrafted textiles, carefully selected details and considered finishes come together in pieces whose beauty reveals itself gradually.</p><p>Each handbag has its own identity. All share the same conviction: true luxury lies in noble materials, exceptional craftsmanship and details designed to endure.</p>",
       "pdp_crumb_col": "Collection", "pdp_added": "Add to bag",
       "cert_h": "Certificate of origin", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Silver", "cert_opal": "Opal", "cert_artisan": "Artisan", "cert_region": "Region", "cert_loom": "Loom",
       "cert_alpaca_v": "Baby Suri alpaca blend", "cert_interior_v": "Handwoven textile", "cert_silver_v": "950 silver", "cert_opal_v": "Andean opal",
-      "acc_details": "Details & care", "acc_details_p": "A Baby Suri alpaca blend over a cowhide structure, with a handwoven interior and 950 silver hardware. Inside: one nylon-zip pocket and two open, alpaca-lined pockets. Any alpaca-hide detail is sourced only from animals that passed naturally of old age. Store in the provided dust bag; brush gently and keep away from prolonged damp.",
+      "acc_details": "Piece details", "pd_materials": "Materials", "pd_design": "Design & function", "pd_dims": "Dimensions & weight", "pd_w": "Width", "pd_h": "Height", "pd_d": "Depth", "pd_weight": "Approx. weight",
+      "acc_care": "Caring for your handbag", "care_intro": "To preserve the beauty of your piece:",
+      "care_list": "Avoid contact with water, perfumes and chemicals.\nProtect it from moisture, heat and prolonged sunlight.\nAvoid rubbing, snagging and abrasive surfaces.\nGently clean with a soft, dry cloth. Do not wash or immerse it.\nStore it in its protective dust bag in a dry, well-ventilated place.",
+      "acc_details_p": "A Baby Suri alpaca blend over a cowhide structure, with a handwoven interior and 950 silver hardware. Inside: one nylon-zip pocket and two open, alpaca-lined pockets. Any alpaca-hide detail is sourced only from animals that passed naturally of old age. Store in the provided dust bag; brush gently and keep away from prolonged damp.",
       "acc_ship": "Shipping & returns", "acc_ship_p": "Complimentary worldwide express shipping. Made-to-order pieces ship within 5–6 weeks. Returns accepted within 14 days on stocked pieces.",
       "acc_origin": "Origin", "acc_origin_p": "Designed by INTIARA and handcrafted by named artisans in Peru, recorded on each piece’s certificate of origin.",
       "related_t": "You may also like",
@@ -283,8 +299,8 @@
       "nav_home": "Inicio", "nav_story": "La Casa", "nav_materials": "Materiales nobles", "nav_collection": "Colección", "nav_process": "Proceso creativo", "nav_artisans": "Artesanos", "nav_pack": "Packaging", "nav_cart": "Carro de compras", "nav_contact": "Contacto", "nav_shop": "Colección",
       "filter_all": "Todo", "filter_bag": "Bolsos", "filter_wallet": "Carteras",
       "view_piece": "Ver pieza", "add_bag": "Añadir a la bolsa", "from": "Desde",
-      "hero_eyebrow": "Diseño de autor", "hero_title": "Los materiales más finos<br>del Perú.",
-      "hero_stmt": "Lujo contemporáneo",
+      "hero_eyebrow": "INTIARA", "hero_title": "Lujo contemporáneo<br>con alma peruana.",
+      "hero_stmt": "Una marca de lujo contemporáneo que transforma los materiales más nobles del Perú en piezas de diseño de autor.",
       "hero_cta": "Descubrir la colección", "ph_hero": "Imagen editorial · mujer + cartera · entorno europeo", "ph_founder": "Retrato · la fundadora",
       "dp_eyebrow": "Filosofía de diseño", "dp_line": "La belleza se descubre en los detalles.",
       "strip": "Diseño contemporáneo, creado a partir de los materiales más nobles del Perú.",
@@ -303,13 +319,16 @@
       "v3_t": "Lujo contemporáneo", "v3_p": "Sofisticado, minimalista y atemporal — en voz baja, nunca alta.",
       "v4_t": "Producción responsable", "v4_p": "Ediciones limitadas, abastecimiento consciente y respeto por los materiales nobles.",
       "nw_eyebrow": "Mantente cerca", "nw_title": "Presentaciones privadas y nuevas piezas", "nw_p": "Únete a la lista para acceso anticipado a cada lanzamiento y las historias detrás de los materiales.", "nw_ph": "Tu correo electrónico", "nw_btn": "Unirme →",
-      "colp_title": "Ópalo Andino", "colp_desc": "Cinco piezas de producción limitada — tejidas en el Perú con alpaca, plata 950 y ópalo andino.",
-      "col_group_label": "Las cinco piezas · Ópalo Andino", "col_choose": "Elige una pieza",
-      "col_intro": "Ópalo Andino celebra la luz que nace desde dentro. Cinco carteras, cinco cualidades esenciales de la mujer — fortaleza serena, armonía, autenticidad, luz interior y plenitud — cada una con el ópalo andino, nuestra piedra protagonista.",
+      "colp_title": "Ópalo Andino", "colp_desc": "Cinco piezas. Cinco expresiones de la luz interior.",
+      "col_group_label": "Las cinco piezas · Ópalo Andino", "col_choose": "Descubre las cinco piezas.",
+      "col_intro": "<p>Ópalo Andino es la primera colección de INTIARA. Una propuesta de diseño de autor que celebra la luz que nace desde dentro y se expresa a través de cinco cualidades de la mujer: fortaleza serena, armonía, autenticidad, luz interior y plenitud.</p><p>Cada cartera posee una identidad propia y refleja una mirada contemporánea sobre la riqueza de los materiales peruanos. La fibra Baby Suri Alpaca, los textiles artesanales, la plata 950 y el ópalo andino se integran en una colección concebida para revelar su belleza en los detalles.</p><p>De producción limitada, cada pieza expresa una forma de entender el lujo: con autenticidad, sensibilidad estética y una elegancia que trasciende las tendencias.</p>",
       "pdp_crumb_col": "Colección", "pdp_added": "Añadir a la bolsa",
       "cert_h": "Certificado de origen", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Plata", "cert_opal": "Ópalo", "cert_artisan": "Artesana", "cert_region": "Región", "cert_loom": "Telar",
       "cert_alpaca_v": "Mezcla Baby Suri alpaca", "cert_interior_v": "Textil tejido a mano", "cert_silver_v": "Plata 950", "cert_opal_v": "Ópalo andino",
-      "acc_details": "Detalles y cuidado", "acc_details_p": "Una mezcla de Baby Suri alpaca sobre una estructura de cuero vacuno, con interior tejido a mano y herrajes de plata 950. En el interior: un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca. Cualquier detalle en piel de alpaca procede solo de animales fallecidos de forma natural durante su vejez. Guárdala en su bolsa de tela; cepilla suavemente y evita la humedad prolongada.",
+      "acc_details": "Detalles de la pieza", "pd_materials": "Materiales", "pd_design": "Diseño y funcionalidad", "pd_dims": "Dimensiones y peso", "pd_w": "Ancho", "pd_h": "Alto", "pd_d": "Fondo", "pd_weight": "Peso aproximado",
+      "acc_care": "Cuidados de tu cartera", "care_intro": "Para preservar la belleza de tu pieza:",
+      "care_list": "Evita el contacto con agua, perfumes y productos químicos.\nProtégela de la humedad, el calor y la exposición prolongada al sol.\nEvita roces, enganches y superficies abrasivas.\nLimpia suavemente con un paño seco y suave. No la laves ni la sumerjas.\nGuárdala en su bolsa protectora, en un lugar seco y ventilado.",
+      "acc_details_p": "Una mezcla de Baby Suri alpaca sobre una estructura de cuero vacuno, con interior tejido a mano y herrajes de plata 950. En el interior: un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca. Cualquier detalle en piel de alpaca procede solo de animales fallecidos de forma natural durante su vejez. Guárdala en su bolsa de tela; cepilla suavemente y evita la humedad prolongada.",
       "acc_ship": "Envíos y devoluciones", "acc_ship_p": "Envío exprés gratuito a todo el mundo. Las piezas a pedido se envían en 5–6 semanas. Devoluciones dentro de 14 días en piezas en stock.",
       "acc_origin": "Origen", "acc_origin_p": "Diseñada por INTIARA y hecha a mano por artesanas peruanas con nombre propio, registradas en el certificado de origen de cada pieza.",
       "related_t": "También te puede gustar",
