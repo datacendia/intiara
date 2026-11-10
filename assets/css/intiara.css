@@ -160,6 +160,13 @@ header#hdr .rail-tagline .rt2{display:block;font-size:10px;letter-spacing:.2em;t
 .pdp-info .price{font-size:21px;margin-bottom:6px;font-family:var(--ser)}
 .pdp-info .colourway{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:26px}
 .pdp-info .colourway .swatch{width:11px;height:11px}
+.pdp-info .palette{margin:-12px 0 28px}
+.pal-h{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}
+.pal-row{display:flex;flex-wrap:wrap;gap:10px}
+.pal-sw{width:44px;height:44px;padding:3px;border-radius:50%;border:1px solid var(--line-2);background:none;cursor:pointer;transition:border-color .2s}
+.pal-sw img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.pal-sw:hover{border-color:var(--ink-2)}
+.pal-sw.on{border-color:var(--dorado);box-shadow:0 0 0 1px var(--dorado)}
 .pdp-info .desc{color:var(--ink-2);line-height:1.95;margin-bottom:30px;max-width:460px;font-family:var(--ser);font-size:17px}
 .pdp-info .btn{width:100%;justify-content:center;margin-bottom:14px}
 .pdp-note{font-size:11px;letter-spacing:.08em;color:var(--ink-2);text-align:center;margin-bottom:34px}
@@ -249,8 +256,8 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
 .drawer-foot .btn{width:100%;justify-content:center}
 .ship-note{font-size:10.5px;letter-spacing:.1em;color:var(--ink-2);text-align:center;margin-top:12px}
 
-.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(120%);background:var(--choco);color:var(--marfil);padding:15px 28px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;z-index:200;transition:transform .5s var(--ease)}
-.toast.show{transform:translateX(-50%) translateY(0)}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(calc(100% + 40px));visibility:hidden;background:var(--choco);color:var(--marfil);padding:15px 28px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;z-index:200;transition:transform .5s var(--ease),visibility 0s .5s}
+.toast.show{transform:translateX(-50%) translateY(0);visibility:visible;transition:transform .5s var(--ease)}
 
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
 .reveal.in{opacity:1;transform:none}

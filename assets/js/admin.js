@@ -123,8 +123,7 @@ function renderProducts(){
       +langArea('Full description (piece page · blank line between paragraphs)','products.'+i+'.long',p.long)
       +langArea('Materials (one per line)','products.'+i+'.materialsList',p.materialsList)
       +langArea('Design & function (one per line)','products.'+i+'.features',p.features)
-      +'<div class="grid3">'+fld('Width',inp('products.'+i+'.dims.w',(p.dims||{}).w))+fld('Height',inp('products.'+i+'.dims.h',(p.dims||{}).h))+fld('Depth',inp('products.'+i+'.dims.d',(p.dims||{}).d))+'</div>'
-      +'<div class="grid3">'+fld('Approx. weight',inp('products.'+i+'.dims.weight',(p.dims||{}).weight))+'</div>'
+      +langArea('Craftsmanship (one per line)','products.'+i+'.craft',p.craft)
       +'<div class="fld"><label>Photos (first one is the main image)</label><div class="imgs">'+imgs+uploadTile('product',' data-i="'+i+'"')+'</div></div>'
       +'</div>';
   }).join('');

@@ -6,19 +6,15 @@
     "instagram": "",
     "pinterest": "",
     "images": {
-      "hero": "assets/img/hero.jpg",
-      "founder": "",
+      "hero": "assets/img/site/hero-portada.jpg",
+      "founder": "assets/img/site/founder.jpg",
       "homeMaterial": "",
-      "collectionGroup": "",
-      "sketchSinchi": "",
-      "sketchAllin": "",
-      "sketchCheqaq": "",
-      "sketchIllari": "",
-      "sketchSumaq": "",
-      "artisans": "",
-      "pack": "",
-      "teamA": "",
-      "teamB": ""
+      "collectionGroup": "assets/img/site/collection-group.jpg",
+      "sketchIllari": "assets/img/site/sketch-illari.jpg",
+      "artisans": "assets/img/site/artisans-team.jpg",
+      "pack": "assets/img/site/packaging.jpg",
+      "teamA": "assets/img/site/team-cecilia.jpg",
+      "teamB": "assets/img/site/team-2.jpg"
     }
   },
   "products": [
@@ -31,30 +27,33 @@
         "en": "True strength has no need to impose itself. It expresses itself through serenity, balance and conviction.",
         "es": "La verdadera fortaleza no necesita imponerse. Se expresa con serenidad, equilibrio y convicción."
       },
-      "colour": { "en": "Cocoa", "es": "Cacao" },
-      "hex": "#6E5A44",
+      "colour": { "en": "Camel", "es": "Camello" },
+      "hex": "#976B4E",
       "price": 520,
       "artisan": "Rosa Q.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-014",
-      "images": [],
+      "images": ["assets/img/products/sinchi-1.jpg", "assets/img/products/sinchi-2.jpg", "assets/img/products/sinchi-3.jpg", "assets/img/products/sinchi-4.jpg"],
       "desc": {
         "en": "The most architectural piece of the collection. SINCHI represents the woman who moves forward with assurance, without any need to draw attention. Its geometric lines and firm structure convey stability, while the softness of Baby Suri Alpaca balances that presence with elegance. Designed to accompany the everyday with sophistication and character.",
         "es": "La pieza más arquitectónica de la colección. SINCHI representa a la mujer que avanza con seguridad, sin necesidad de llamar la atención. Sus líneas geométricas y su estructura firme transmiten estabilidad, mientras la suavidad de la Baby Suri Alpaca equilibra esa presencia con elegancia. Diseñada para acompañar el ritmo cotidiano con sofisticación y carácter."
       },
       "long": {
-        "en": "Sinchi is a structured, spacious handbag crafted in Baby Suri Alpaca. Its exterior reveals subtle geometric motifs in raised relief, traced in delicate topstitching. The design unites the nobility of its materials with meticulous attention to detail and an elegance that needs no excess.\n\nInside, a handloomed artisanal textile brings texture and character to a piece conceived to accompany the many moments of the day. Its leather handles, lightly padded for comfort, allow it to be carried in the hand or in the crook of the arm.\n\nAs a signature detail, an alpaca-hide tassel is joined to a Peruvian Andean opal, set off by 950 silver accents and a fine leather cord. A meeting of materials that celebrates the identity and artisanal richness of the piece.",
+        "en": "Sinchi is a structured and spacious handbag crafted from Baby Suri Alpaca. Its exterior reveals subtle geometric patterns in raised relief, outlined with delicate topstitching. The design brings together the richness of its materials and a meticulous attention to detail, expressing an understated elegance.\n\nInside, the handwoven textile adds texture and character to a piece designed to accompany different moments of the day. Its slightly padded leather handles are designed for greater comfort, allowing the bag to be carried either by hand or over the forearm.\n\nAs a distinctive detail, an alpaca fur tassel is paired with a Peruvian Andean opal, complemented by 950 silver finishes and a fine leather cord. An interplay of materials that highlights the piece’s identity and artisanal character.",
         "es": "Sinchi es una cartera estructurada y espaciosa, elaborada en Baby Suri Alpaca, cuya superficie exterior revela sutiles dibujos geométricos en alto relieve, delineados mediante delicados pespuntes. Su diseño combina la nobleza de los materiales con una cuidada atención al detalle y una elegancia que se expresa sin excesos.\n\nEn su interior, el telar de elaboración artesanal aporta textura y carácter a una pieza concebida para acompañar distintos momentos del día. Sus asas de cuero, ligeramente acolchadas para brindar mayor comodidad, permiten llevarla tanto en la mano como sobre el antebrazo.\n\nComo detalle distintivo, una borla de piel de alpaca se une a un ópalo andino peruano, acompañado de terminaciones en plata 950 y un fino cordón de cuero. Un encuentro de materiales que pone en valor la identidad y la riqueza artesanal de la pieza."
       },
       "materialsList": {
-        "en": "Exterior: Baby Suri Alpaca.\nLining: handloomed artisanal textile.\nHandles: leather.\nLabel: embossed cowhide leather, affixed to the handloomed lining.\nOrnament: alpaca-hide tassel, Peruvian Andean opal, 950 silver accents and leather cord.",
+        "en": "Exterior: Baby Suri Alpaca.\nInterior lining: artisanally woven textile.\nHandles: leather.\nLabel: embossed cowhide leather, attached to the woven textile.\nOrnament: alpaca fur tassel, Peruvian Andean opal, 950 silver finishes and leather cord.",
         "es": "Exterior: Baby Suri Alpaca.\nForro interior: telar de elaboración artesanal.\nAsas: cuero.\nEtiqueta: cuero vacuno grabado, adherido al telar.\nAdorno: borla de piel de alpaca, ópalo andino peruano, terminaciones en plata 950 y cordón de cuero."
       },
       "features": {
-        "en": "Structured, spacious handbag.\nExterior with geometric motifs in raised relief, created with topstitching.\nLightly padded handles for added comfort, to be carried in the hand or in the crook of the arm.\nTwo interior patch pockets in alpaca, stitched onto the handloomed lining and edged with fine leather binding.\nOne discreet exterior welt pocket, concealed from view, made in lightweight lining fabric and fitted with an 18 cm nylon zip.",
-        "es": "Cartera estructurada y espaciosa.\nSuperficie exterior con dibujos geométricos en alto relieve, realizados mediante pespuntes.\nAsas ligeramente acolchadas para mayor comodidad, con opción de llevarla en la mano o sobre el antebrazo.\nDos bolsillos interiores tipo parche, elaborados en alpaca y cosidos sobre el telar, con fino sesgo de cuero.\nUn bolsillo exterior tipo ojal, discreto y no visible desde el exterior, confeccionado en tela de forro liviana y provisto de un cierre de nylon de 18 cm."
+        "en": "Structured and spacious handbag.\nExterior featuring geometric patterns in raised relief, created through topstitching.\nSlightly padded handles for greater comfort, allowing the bag to be carried by hand or over the forearm.\nTwo interior patch pockets made from alpaca fabric and stitched onto the woven textile, finished with fine leather binding.",
+        "es": "Cartera estructurada y espaciosa.\nSuperficie exterior con dibujos geométricos en alto relieve, realizados mediante pespuntes.\nAsas ligeramente acolchadas para mayor comodidad, con opción de llevarla en la mano o sobre el antebrazo.\nDos bolsillos interiores tipo parche, elaborados en alpaca y cosidos sobre el telar, con fino sesgo de cuero."
       },
-      "dims": { "w": "", "h": "", "d": "", "weight": "" }
+      "craft": {
+        "en": "Designed in: Peru.\nPlace of production: Peru.\nArtisanal techniques: Traditional loom weaving for the interior lining, traditional tanning techniques used in crafting the alpaca fur tassel, and handcrafted 950 silver hardware.\nProduction: Each handbag is crafted in an artisan workshop, where precise topstitching, carefully executed finishes and meticulous attention to detail reflect the value of skilled handcraftsmanship.",
+        "es": "Diseñada en: Perú.\nLugar de elaboración: Perú.\nTécnicas artesanales utilizadas: Tejido artesanal en telar para el forro interior, técnicas tradicionales de curtido para la elaboración de la borla de piel de alpaca y trabajo artesanal en plata 950 para la creación de sus herrajes.\nConfección: Cada cartera es confeccionada en un taller de artesanos, donde la precisión de los pespuntes, el cuidado de los acabados y la atención a cada detalle reflejan el valor del trabajo manual."
+      }
     },
     {
       "id": "allin-sonqo",
@@ -65,16 +64,32 @@
         "en": "Elegance can also be felt in the freedom of movement.",
         "es": "La elegancia también puede sentirse en la libertad de movimiento."
       },
-      "colour": { "en": "Camel", "es": "Camello" },
-      "hex": "#A98A5C",
+      "colour": { "en": "Black", "es": "Negro" },
+      "hex": "#181721",
       "price": 480,
       "artisan": "Elena M.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-027",
-      "images": [],
+      "images": ["assets/img/products/allin-sonqo-1.jpg", "assets/img/products/allin-sonqo-2.jpg", "assets/img/products/allin-sonqo-3.jpg", "assets/img/products/allin-sonqo-4.jpg"],
       "desc": {
         "en": "Designed to accompany a woman with ease, this piece represents the balance between function and sophistication. Its design allows freedom of movement without giving up elegance. An invitation to live with calm, harmony and confidence. (Name pending validation.)",
         "es": "Diseñada para acompañar a la mujer con naturalidad, esta pieza representa el equilibrio entre funcionalidad y sofisticación. Su diseño permite moverse con libertad sin renunciar a la elegancia. Es una invitación a vivir con calma, armonía y confianza. (Nombre pendiente de validación.)"
+      },
+      "long": {
+        "en": "Allin Sonqo is a bucket-style handbag crafted from Baby Suri Alpaca, combining soft lines and a refined aesthetic with the richness of artisanal details. Its design is distinguished by a hand-braided leather trim running across the upper front, accented by a 950 silver setting that frames a Peruvian Andean opal.\n\nAn alpaca fur tassel suspended from the left side adds texture and movement, while the cowhide leather handle complements the simplicity and elegance of its silhouette.\n\nInside, the artisanally woven textile introduces a contrast of textures and celebrates Peru's textile heritage. Its alpaca fabric pocket, divided into two compartments and delicately finished with fine leather binding, adds functionality while preserving the meticulous attention to detail.",
+        "es": "Allin Sonqo es una cartera de silueta tipo bucket, elaborada en Baby Suri Alpaca, que combina líneas suaves y una estética depurada con la riqueza de los detalles artesanales. Su diseño destaca por una trenza de cuero confeccionada a mano que recorre la parte superior del frente, realzada por una pieza de plata 950 que enmarca un ópalo andino peruano.\n\nUna borla de piel de alpaca, suspendida en el lateral izquierdo, aporta textura y movimiento, mientras que su asa de cuero vacuno complementa la sencillez y elegancia de la silueta.\n\nEn el interior, el telar de elaboración artesanal introduce un contraste de texturas y pone en valor la tradición textil peruana. Su bolsillo de alpaca, dividido en dos compartimentos y delicadamente rematado con un fino ribete de cuero, aporta funcionalidad sin perder la atención a los detalles."
+      },
+      "materialsList": {
+        "en": "Exterior: Baby Suri Alpaca.\nInterior lining: artisanally woven textile.\nHandle: cowhide leather.\nFront detail: hand-braided leather trim.\nLabel: embossed cowhide leather, attached to the woven textile.\nOrnament: Peruvian Andean opal set in 950 silver, with an alpaca fur tassel.",
+        "es": "Exterior: Baby Suri Alpaca.\nForro interior: telar de elaboración artesanal.\nAsa: cuero vacuno.\nDetalle frontal: trenza de cuero confeccionada a mano.\nEtiqueta: cuero vacuno grabado, adherido al telar.\nAdorno: ópalo andino peruano montado en una pieza de plata 950 y borla de piel de alpaca."
+      },
+      "features": {
+        "en": "Bucket-style handbag with soft lines and a rounded base.\nLong cowhide leather handle.\nHand-braided leather trim running horizontally across the upper front.\nPartial closure with a leather tab and magnetic snap fastener.\nTwo snap fasteners, one on each side of the top opening.\nOne interior alpaca fabric patch pocket, divided into two compartments and finished with fine leather binding.\nAlpaca fur tassel suspended from the left side.",
+        "es": "Cartera de silueta tipo bucket, de líneas suaves y base redondeada.\nAsa larga de cuero vacuno.\nTrenza de cuero elaborada a mano que recorre horizontalmente la parte superior del frente.\nCierre parcial mediante una presilla de cuero con broche imantado.\nDos broches de presión, uno a cada lado de la abertura superior.\nUn bolsillo interior tipo parche, elaborado en alpaca, dividido en dos compartimentos y rematado con un fino ribete de cuero.\nBorla de piel de alpaca suspendida del lateral izquierdo."
+      },
+      "craft": {
+        "en": "Designed in: Peru.\nPlace of production: Peru.\nArtisanal techniques: Traditional loom weaving for the interior lining, hand-braiding of leather, artisanal tanning techniques used in crafting the alpaca fur tassel, and handcrafted 950 silverwork for the Andean opal setting.\nProduction: Each handbag is crafted in an artisan workshop, where careful joins, refined finishes and attention to every detail reflect the value of skilled handcraftsmanship.",
+        "es": "Diseñada en: Perú.\nLugar de elaboración: Perú.\nTécnicas artesanales utilizadas: Tejido artesanal en telar para el forro interior, trenzado manual de cuero, técnicas artesanales de curtido para la elaboración de la borla de piel de alpaca y trabajo artesanal en plata 950 para la montura del ópalo andino.\nConfección: Cada cartera es confeccionada en un taller de artesanos, donde el cuidado de las uniones, los acabados y la atención a cada detalle reflejan el valor del trabajo manual."
       }
     },
     {
@@ -86,16 +101,32 @@
         "en": "True elegance begins when a woman is true to herself.",
         "es": "La verdadera elegancia comienza cuando una mujer es fiel a sí misma."
       },
-      "colour": { "en": "Taupe", "es": "Topo" },
-      "hex": "#8A7D6B",
+      "colour": { "en": "Black", "es": "Negro" },
+      "hex": "#201F28",
       "price": 460,
       "artisan": "Carmen A.",
       "region": { "en": "Puno, Peru", "es": "Puno, Perú" },
       "loom": "PU-009",
-      "images": [],
+      "images": ["assets/img/products/cheqaq-1.jpg", "assets/img/products/cheqaq-2.jpg", "assets/img/products/cheqaq-3.jpg", "assets/img/products/cheqaq-4.jpg"],
       "desc": {
         "en": "CHEQAQ celebrates the beauty of authenticity. A piece made for those who find luxury in materials, in details and in quality, without any need for excess. Its discreet design reflects a confident personality, where every choice answers to one's own style before any trend.",
         "es": "CHEQAQ celebra la belleza de la autenticidad. Una pieza pensada para quienes encuentran el lujo en los materiales, en los detalles y en la calidad, sin necesidad de excesos. Su diseño discreto refleja una personalidad segura, donde cada elección responde al estilo propio antes que a las tendencias."
+      },
+      "long": {
+        "en": "Cheqaq is a compact handbag with clean, refined lines, crafted from Baby Suri Alpaca. Its soft texture is complemented by carefully crafted leather and silver details. The design offers a contemporary interpretation of functionality while preserving the elegance and artisanal character that distinguish INTIARA.\n\nOne of its most distinctive features is a high-quality metal zipper running along the edge of the flap, providing access to an additional, independent compartment that extends to the lower back of the handbag. At the center front, a discreet leather loop holds a silver ornament featuring a Peruvian Andean opal, from which hangs a cowhide leather tassel finished with a metal cap.\n\nThe strap features hand-braided leather sections at both ends, connected by silver fittings to an adjustable section with a matching silver buckle. Topstitched leather attachments and a cowhide leather base panel add definition and refinement to the finishing details.\n\nIts interior organization and additional pockets provide practical storage for personal essentials, making Cheqaq a piece that brings together functionality, design and sophistication.",
+        "es": "Cheqaq es una cartera de silueta compacta y líneas depuradas, elaborada en Baby Suri Alpaca, que combina la suavidad de su textura con detalles de cuero y plata cuidadosamente trabajados. Su diseño ofrece una interpretación contemporánea de la funcionalidad, sin renunciar a la elegancia y al carácter artesanal que distingue a INTIARA.\n\nUna de sus características más singulares es el cierre metálico de alta calidad que recorre el borde de la solapa y permite acceder a un compartimento adicional e independiente, que se extiende hasta la parte posterior inferior de la cartera. En el centro del frente, una discreta presilla de cuero sostiene un adorno de plata con ópalo andino peruano, del que pende una borla de cuero vacuno rematada con un capuchón.\n\nLa correa incorpora trenzados de cuero elaborados a mano en ambos extremos, unidos mediante herrajes de plata a una sección ajustable con hebilla del mismo material. Sus terminaciones de cuero pespunteado y la pieza de cuero vacuno en la base aportan definición y cuidado a los acabados.\n\nSu distribución interior y sus bolsillos permiten organizar los objetos personales, haciendo de Cheqaq una pieza que reúne practicidad, diseño y sofisticación."
+      },
+      "materialsList": {
+        "en": "Exterior: Baby Suri Alpaca.\nInterior lining: artisanally woven textile.\nStrap: cowhide leather with hand-braided details.\nHardware and buckle: silver.\nOrnament: Peruvian Andean opal with silver elements, a metal cap and a cowhide leather tassel.\nBase: cowhide leather panel.\nInterior label: embossed leather.",
+        "es": "Exterior: Baby Suri Alpaca.\nForro interior: telar de elaboración artesanal.\nCorrea: cuero vacuno con detalles trenzados a mano.\nHerrajes y hebilla: plata.\nAdorno: ópalo andino peruano con elementos de plata, capuchón y borla de cuero vacuno.\nBase: pieza de cuero vacuno.\nEtiqueta interior: cuero grabado."
+      },
+      "features": {
+        "en": "Compact crossbody handbag.\nAdditional independent compartment, accessed through a premium metal zipper along the edge of the flap, extending down to the lower back of the handbag.\nMain closure with a high-quality magnetic metal snap.\nAdditional exterior front pocket.\nInterior patch pocket divided into two compartments.\nAdjustable strap with a silver buckle.\nHand-braided leather details at both ends of the strap, connected by silver fittings.\nTopstitched leather attachments where the strap joins the body of the handbag.\nFront ornament suspended from a leather loop.\nCowhide leather reinforcement at the base.",
+        "es": "Cartera tipo crossbody de silueta compacta.\nCompartimento adicional e independiente, accesible mediante un cierre metálico premium ubicado en el borde de la solapa, que se extiende hasta la parte inferior posterior de la cartera.\nCierre principal mediante broche metálico imantado de alta calidad.\nBolsillo exterior frontal adicional.\nBolsillo interior tipo parche dividido en dos compartimentos.\nCorrea ajustable mediante hebilla de plata.\nDetalles de cuero trenzado a mano en ambos extremos de la correa, unidos mediante herrajes de plata.\nTerminaciones de cuero pespunteado en los puntos de unión con el cuerpo de la cartera.\nAdorno frontal suspendido de una presilla de cuero.\nRefuerzo de cuero vacuno en la base."
+      },
+      "craft": {
+        "en": "Designed in: Peru.\nPlace of production: Peru.\nArtisanal techniques: Traditional loom weaving for the interior lining, hand-braiding of leather, artisanal silverwork for the hardware and Andean opal setting, and crafting of the cowhide leather tassel.\nProduction: Each handbag is crafted in an artisan workshop, where precise construction, carefully executed topstitching and meticulous finishing reflect the value of skilled handcraftsmanship.",
+        "es": "Diseñada en: Perú.\nLugar de elaboración: Perú.\nTécnicas artesanales utilizadas: Tejido artesanal en telar para el forro interior, trenzado manual de cuero, trabajo artesanal en plata para los herrajes y la montura del ópalo andino, y elaboración de la borla de cuero vacuno.\nConfección: Cada cartera es confeccionada en un taller de artesanos, donde la precisión de las uniones, el cuidado de los pespuntes y la atención a los acabados reflejan el valor del trabajo manual."
       }
     },
     {
@@ -103,20 +134,33 @@
       "type": "bag",
       "cat": { "en": "Inner Light", "es": "Luz Interior" },
       "name": "ILLARI",
-      "quote": {
-        "en": "All true light is born from within.",
-        "es": "Toda luz verdadera nace desde dentro."
-      },
-      "colour": { "en": "Ivory", "es": "Marfil" },
-      "hex": "#C9B48E",
+      "quote": { "en": "All true light is born from within.", "es": "Toda luz verdadera nace desde dentro." },
+      "colour": { "en": "Black", "es": "Negro" },
+      "hex": "#100F16",
       "price": 560,
       "artisan": "Rosa Q.",
       "region": { "en": "Arequipa, Peru", "es": "Arequipa, Perú" },
       "loom": "AR-018",
-      "images": [],
+      "images": ["assets/img/products/illari-1.jpg", "assets/img/products/illari-2.jpg", "assets/img/products/illari-3.jpg", "assets/img/products/illari-4.jpg"],
       "desc": {
         "en": "The iconic piece of the Andean Opal collection. Inspired by a flower that begins to open with the first light of day, ILLARI represents blossoming, delicacy and the beauty that emerges naturally. Its heart, formed of Andean opals, symbolises the singular inner light every woman carries with her.",
         "es": "La pieza icónica de la Colección Ópalo Andino. Inspirada en una flor que comienza a abrirse con la primera luz del día, ILLARI representa el florecimiento, la delicadeza y la belleza que emerge de manera natural. Su centro, formado por ópalos andinos, simboliza esa luz interior única que cada mujer lleva consigo."
+      },
+      "long": {
+        "en": "Illari is a sculptural handbag crafted from Baby Suri Alpaca, transforming the softness of this noble material into a richly expressive floral composition. Its design is defined by a three-dimensional flower of sixteen petals, carefully crafted to create an interplay of volume, texture and movement.\n\nAt the heart of the flower, a handcrafted 950 silver piece brings together eleven pearl-shaped Peruvian Andean opals. Each stone is delicately threaded on fine silver wires, with individual finishing elements that secure it to the base, forming an ensemble that evokes the beauty of nature.\n\nIts cowhide leather handle, hand-braided over an inner cord that adds strength and volume, completes the design with a contrast of textures. At the back, a discreet welt pocket with a metal zipper adds functionality without disturbing the harmony of its silhouette.\n\nIllari is an expression of creativity and craftsmanship, where every element finds its place in a piece that celebrates the beauty of its materials and the care given to every detail.",
+        "es": "Illari es una cartera de carácter escultórico, elaborada en Baby Suri Alpaca, que transforma la suavidad de este noble material en una composición floral de gran expresividad. Su diseño se distingue por una flor tridimensional de dieciséis pétalos, cuidadosamente confeccionados para crear un juego de volumen, textura y movimiento.\n\nEn el corazón de la flor, una pieza artesanal de plata 950 reúne once ópalos andinos peruanos en forma de perlas. Cada piedra se encuentra delicadamente enhebrada mediante finos hilos de plata, con terminaciones individuales que la sujetan a la base, dando forma a un conjunto que evoca la belleza de la naturaleza.\n\nSu asa de cuero vacuno, trenzada a mano sobre una driza interior que aporta resistencia y volumen, complementa el diseño con un contraste de texturas. En la parte posterior, un discreto bolsillo tipo ojal con cierre metálico incorpora funcionalidad sin alterar la armonía de su silueta.\n\nIllari es una expresión de creatividad y trabajo artesanal, donde cada elemento encuentra su lugar en una pieza que celebra la belleza de los materiales y el cuidado de los detalles."
+      },
+      "materialsList": {
+        "en": "Exterior: Baby Suri Alpaca.\nHandle: hand-braided cowhide leather with an inner reinforcing cord.\nLabel: embossed cowhide leather, attached to the woven textile.\nCentral ornament: handcrafted 950 silver centerpiece featuring eleven Peruvian Andean opals shaped like pearls.\nOpal settings: silver wires and individual silver finishing elements.\nInterior lining: artisanally woven textile.",
+        "es": "Exterior: Baby Suri Alpaca.\nAsa: cuero vacuno trenzado a mano, con driza interior de refuerzo.\nEtiqueta: cuero vacuno grabado, adherido al telar.\nAdorno central: pieza de plata 950 con once ópalos andinos peruanos en forma de perlas.\nElementos de sujeción de los ópalos: hilos y terminaciones de plata.\nForro interior: telar de elaboración artesanal."
+      },
+      "features": {
+        "en": "Sculptural handbag featuring a three-dimensional floral composition.\nFront flower composed of sixteen Baby Suri Alpaca petals.\nOrnamental centerpiece with eleven pearl-shaped Andean opals, individually secured with fine silver wires and finishing elements.\nHand-braided leather handle with an inner reinforcing cord for strength and volume.\nRear welt pocket with a metal zipper.\nMain closure: premium metal zipper located at the top of the handbag.\nNo interior pockets.",
+        "es": "Cartera de diseño escultórico con composición floral tridimensional.\nFlor frontal formada por dieciséis pétalos de Baby Suri Alpaca.\nCentro ornamental con once ópalos andinos en forma de perlas, sujetos individualmente mediante finos hilos y terminaciones de plata.\nAsa de cuero trenzado a mano sobre una driza interior que proporciona resistencia y volumen.\nBolsillo posterior tipo ojal con cierre metálico.\nCierre principal: cierre metálico premium ubicado en la parte superior de la cartera.\nSin bolsillos interiores."
+      },
+      "craft": {
+        "en": "Designed in: Peru.\nPlace of production: Peru.\nArtisanal techniques: Crafting and shaping of Baby Suri Alpaca petals to create a three-dimensional flower, hand-braiding of leather around a reinforcing cord, and artisanal 950 silverwork for the individual setting of the eleven Andean opals.\nProduction: Each handbag is crafted in an artisan workshop, where the construction of its forms, careful handling of materials and precision of the finishes reflect meticulous attention to detail.",
+        "es": "Diseñada en: Perú.\nLugar de elaboración: Perú.\nTécnicas artesanales utilizadas: Confección y modelado de pétalos de Baby Suri Alpaca para la creación de una flor tridimensional, trenzado manual de cuero sobre driza de refuerzo y trabajo artesanal en plata 950 para el montaje individual de los once ópalos andinos.\nConfección: Cada cartera es confeccionada en un taller de artesanos, donde la construcción de sus formas, el trabajo de los materiales y la precisión de los acabados reflejan una especial atención al detalle."
       }
     },
     {
@@ -128,13 +172,13 @@
         "en": "Beauty reaches its fullest expression when it is born of self-confidence.",
         "es": "La belleza alcanza su máxima expresión cuando nace de la confianza en una misma."
       },
-      "colour": { "en": "Sand", "es": "Arena" },
-      "hex": "#D8C6A0",
+      "colour": { "en": "Camel", "es": "Camello" },
+      "hex": "#95694B",
       "price": 420,
       "artisan": "Lucía F.",
       "region": { "en": "Lima, Peru", "es": "Lima, Perú" },
       "loom": "LI-003",
-      "images": [],
+      "images": ["assets/img/products/sumaq-1.jpg", "assets/img/products/sumaq-2.jpg", "assets/img/products/sumaq-3.jpg", "assets/img/products/sumaq-4.jpg"],
       "desc": {
         "en": "SUMAQ represents the culmination of the collection. Made to accompany the most special moments, this clutch expresses a serene, timeless elegance in which every detail reflects balance, excellence and sophistication. More than a piece for an occasion, it is a celebration of the woman who has found her own essence.",
         "es": "SUMAQ representa la culminación de la colección. Diseñado para acompañar los momentos más especiales, este clutch expresa una elegancia serena y atemporal, donde cada detalle refleja equilibrio, excelencia y sofisticación. Más que una pieza para una ocasión, es una celebración de la mujer que ha encontrado su propia esencia."
@@ -147,22 +191,22 @@
       "t": { "en": "Alpaca", "es": "Alpaca" },
       "lead": { "en": "The softness of an exceptional fibre", "es": "La suavidad de una fibra excepcional" },
       "p": {
-        "en": "Our exterior textile is a Baby Suri alpaca blend — approximately 61% Baby Suri alpaca, 29% wool and 10% nylon — selected for its exceptional softness and natural elegance.",
-        "es": "Nuestro textil exterior es una mezcla de Baby Suri alpaca — aproximadamente 61% Baby Suri alpaca, 29% lana y 10% nylon — seleccionada por su suavidad excepcional y su elegancia natural."
+        "en": "Our exterior textile is a Baby Suri alpaca blend — 68% Baby Suri alpaca, 29% wool and 3% nylon — selected for its exceptional softness and natural elegance.",
+        "es": "Nuestro textil exterior es una mezcla de Baby Suri alpaca — 68% Baby Suri alpaca, 29% lana y 3% nylon — seleccionada por su suavidad excepcional y su elegancia natural."
       },
       "ph": { "en": "Macro · exterior texture", "es": "Macro · textura exterior" },
-      "image": ""
+      "image": "assets/img/site/mat-alpaca.jpg"
     },
     {
       "n": "02",
       "t": { "en": "950 silver", "es": "Plata 950" },
       "lead": { "en": "The nobility of Peruvian silver", "es": "La nobleza de la plata peruana" },
       "p": {
-        "en": "Every piece features details crafted in 950 silver — including the clasp and the branded plate — prized for its exceptional purity and shine.",
-        "es": "Cada pieza incorpora detalles elaborados en plata 950 — incluidos el broche y la placa de la marca — reconocida por su pureza y brillo excepcionales."
+        "en": "Artisanally crafted, 950 silver enhances the details of every INTIARA creation. Featured in Andean opal settings and delicate ornamental and functional elements, it adds distinction and reflects the meticulous care devoted to every finish.",
+        "es": "Trabajada artesanalmente, la plata 950 realza los detalles de cada creación INTIARA. Presente en las monturas de los ópalos andinos y en delicados elementos ornamentales y funcionales, aporta distinción y refleja el cuidado de cada acabado."
       },
       "ph": { "en": "Detail · the hardware", "es": "Detalle · el herraje" },
-      "image": ""
+      "image": "assets/img/site/mat-silver.jpg"
     },
     {
       "n": "03",
@@ -173,7 +217,7 @@
         "es": "Seleccionado por su singular belleza natural, cada ópalo aporta carácter y exclusividad."
       },
       "ph": { "en": "Macro · the opal", "es": "Macro · el ópalo" },
-      "image": ""
+      "image": "assets/img/site/mat-opal.jpg"
     },
     {
       "n": "04",
@@ -184,7 +228,7 @@
         "es": "Las borlas son elaboradas con piel de alpaca obtenida de manera responsable, reflejando nuestro compromiso con el aprovechamiento consciente de los recursos y el respeto por los materiales nobles."
       },
       "ph": { "en": "Detail · the tassel", "es": "Detalle · la borla" },
-      "image": ""
+      "image": "assets/img/site/mat-tassel.jpg"
     },
     {
       "n": "05",
@@ -195,7 +239,7 @@
         "es": "Cada interior incorpora textiles tejidos a mano por artesanos peruanos — cada diseño exclusivo de la colección — convirtiendo cada pieza en una expresión de tradición y diseño contemporáneo."
       },
       "ph": { "en": "The bag, opened", "es": "La cartera, abierta" },
-      "image": ""
+      "image": "assets/img/site/mat-woven.jpg"
     },
     {
       "n": "06",
@@ -206,8 +250,15 @@
         "es": "El cuero vacuno aporta la estructura de cada pieza — la resistencia, el confort y la durabilidad que permiten que una cartera INTIARA perdure por años."
       },
       "ph": { "en": "Detail · the structure", "es": "Detalle · la estructura" },
-      "image": ""
+      "image": "assets/img/site/mat-cowhide.jpg"
     }
+  ],
+  "colours": [
+    { "id": "negro", "name": { "en": "Black", "es": "Negro" }, "hex": "#2B2725", "image": "assets/img/palette/negro.jpg" },
+    { "id": "camel", "name": { "en": "Camel", "es": "Camello" }, "hex": "#76442A", "image": "assets/img/palette/camel.jpg" },
+    { "id": "gris", "name": { "en": "Grey", "es": "Gris" }, "hex": "#2D3235", "image": "assets/img/palette/gris.jpg" },
+    { "id": "azul-marino", "name": { "en": "Navy blue", "es": "Azul marino" }, "hex": "#211F2B", "image": "assets/img/palette/azul-marino.jpg" },
+    { "id": "verde-olivo", "name": { "en": "Olive green", "es": "Verde olivo" }, "hex": "#6C6D56", "image": "assets/img/palette/verde-olivo.jpg" }
   ],
   "copy": {
     "en": {
@@ -241,7 +292,7 @@
       "pdp_crumb_col": "Collection", "pdp_added": "Add to bag",
       "cert_h": "Certificate of origin", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Silver", "cert_opal": "Opal", "cert_artisan": "Artisan", "cert_region": "Region", "cert_loom": "Loom",
       "cert_alpaca_v": "Baby Suri alpaca blend", "cert_interior_v": "Handwoven textile", "cert_silver_v": "950 silver", "cert_opal_v": "Andean opal",
-      "acc_details": "Piece details", "pd_materials": "Materials", "pd_design": "Design & function", "pd_dims": "Dimensions & weight", "pd_w": "Width", "pd_h": "Height", "pd_d": "Depth", "pd_weight": "Approx. weight",
+      "acc_details": "Piece details", "pd_materials": "Materials", "pd_design": "Design & function", "acc_craft": "Craftsmanship", "pd_colours": "Available colours",
       "acc_care": "Caring for your handbag", "care_intro": "To preserve the beauty of your piece:",
       "care_list": "Avoid contact with water, perfumes and chemicals.\nProtect it from moisture, heat and prolonged sunlight.\nAvoid rubbing, snagging and abrasive surfaces.\nGently clean with a soft, dry cloth. Do not wash or immerse it.\nStore it in its protective dust bag in a dry, well-ventilated place.",
       "acc_details_p": "A Baby Suri alpaca blend over a cowhide structure, with a handwoven interior and 950 silver hardware. Inside: one nylon-zip pocket and two open, alpaca-lined pockets. Any alpaca-hide detail is sourced only from animals that passed naturally of old age. Store in the provided dust bag; brush gently and keep away from prolonged damp.",
@@ -259,15 +310,14 @@
       "matp_title": "Noble materials", "matp_desc": "INTIARA does not reveal everything at once. The richness of each piece is discovered, layer by layer.",
       "procp_title": "Creative process", "procp_desc": "Design comes first. Every INTIARA piece begins as a drawing — then the noble materials are chosen to serve it.",
       "proc_intro_title": "It begins with a sketch", "proc_intro_p": "Before a single thread is woven, each piece is drawn by hand. The sketch fixes the proportion, the geometry and the details — the silver, the tassel, the stone — long before the materials are chosen.",
-      "proc_sketch_label": "Sketch · SINCHI", "proc_sketch_title": "From drawing to piece", "proc_sketch_p": "The Andean opal is the hero stone of Collection I. SINCHI's geometric front panel is drawn by hand and then interpreted in noble materials — handwoven, structured and finished in 950 silver.",
+      "proc_sketch_label": "Sketch · ILLARI", "proc_sketch_title": "From drawing to piece", "proc_sketch_p": "The Andean opal is the hero stone of Collection I. ILLARI's sixteen-petal flower is drawn by hand and then interpreted in noble materials — Baby Suri Alpaca, a hand-braided leather handle and eleven Andean opals set in 950 silver.",
       "proc_mats_title": "Read from the sketch", "proc_mats_p": "The annotations on the drawing become the specification for each finished piece.",
-      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "≈61% Baby Suri alpaca, 29% wool, 10% nylon — for softness and natural elegance.",
+      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "68% Baby Suri alpaca, 29% wool, 3% nylon — for softness and natural elegance.",
       "proc_m_silver_t": "950 silver", "proc_m_silver_p": "Peruvian silver detailing and the branded plate.",
       "proc_m_telar_t": "Loom", "proc_m_telar_p": "Handwoven by Peruvian artisans; each design exclusive to the collection.",
       "proc_m_hide_t": "Alpaca hide", "proc_m_hide_p": "Only in artisanal details, from alpacas that passed naturally of old age.",
       "proc_m_cow_t": "Cowhide", "proc_m_cow_p": "Structural — for resistance, comfort and durability.",
       "proc_m_pockets_t": "Interior", "proc_m_pockets_p": "One nylon-zip pocket and two open, alpaca-lined pockets.",
-      "proc_gallery_title": "Sketches from the atelier", "proc_gallery_p": "One drawing for each piece in the collection.",
       "artp_title": "Our Artisans", "artp_desc": "This is not a page about production. It is a tribute to the people whose hands bring every INTIARA piece to life.",
       "art_quote": "Luxury begins with the hands that create it.",
       "art_body_t": "In honour of the hands", "art_body_p1": "Behind every INTIARA piece there are people — Peruvian master artisans who work with patience, care and pride, preserving knowledge passed from one generation to the next.", "art_body_p2": "We do not speak of production. We speak of dedication, of time, and of the quiet respect a piece deserves when it is truly made by hand. To them, our deepest gratitude.",
@@ -325,7 +375,7 @@
       "pdp_crumb_col": "Colección", "pdp_added": "Añadir a la bolsa",
       "cert_h": "Certificado de origen", "cert_alpaca": "Alpaca", "cert_interior": "Interior", "cert_silver": "Plata", "cert_opal": "Ópalo", "cert_artisan": "Artesana", "cert_region": "Región", "cert_loom": "Telar",
       "cert_alpaca_v": "Mezcla Baby Suri alpaca", "cert_interior_v": "Textil tejido a mano", "cert_silver_v": "Plata 950", "cert_opal_v": "Ópalo andino",
-      "acc_details": "Detalles de la pieza", "pd_materials": "Materiales", "pd_design": "Diseño y funcionalidad", "pd_dims": "Dimensiones y peso", "pd_w": "Ancho", "pd_h": "Alto", "pd_d": "Fondo", "pd_weight": "Peso aproximado",
+      "acc_details": "Detalles de la pieza", "pd_materials": "Materiales", "pd_design": "Diseño y funcionalidad", "acc_craft": "Elaboración", "pd_colours": "Colores disponibles",
       "acc_care": "Cuidados de tu cartera", "care_intro": "Para preservar la belleza de tu pieza:",
       "care_list": "Evita el contacto con agua, perfumes y productos químicos.\nProtégela de la humedad, el calor y la exposición prolongada al sol.\nEvita roces, enganches y superficies abrasivas.\nLimpia suavemente con un paño seco y suave. No la laves ni la sumerjas.\nGuárdala en su bolsa protectora, en un lugar seco y ventilado.",
       "acc_details_p": "Una mezcla de Baby Suri alpaca sobre una estructura de cuero vacuno, con interior tejido a mano y herrajes de plata 950. En el interior: un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca. Cualquier detalle en piel de alpaca procede solo de animales fallecidos de forma natural durante su vejez. Guárdala en su bolsa de tela; cepilla suavemente y evita la humedad prolongada.",
@@ -343,15 +393,14 @@
       "matp_title": "Materiales nobles", "matp_desc": "INTIARA no lo revela todo a primera vista. La riqueza de cada pieza se descubre, capa a capa.",
       "procp_title": "Proceso creativo", "procp_desc": "Primero el diseño. Cada pieza de INTIARA nace como un boceto — y luego se eligen los materiales nobles para servirlo.",
       "proc_intro_title": "Empieza con un boceto", "proc_intro_p": "Antes de tejer un solo hilo, cada pieza se dibuja a mano. El boceto fija la proporción, la geometría y los detalles — la plata, la borla, la piedra — mucho antes de elegir los materiales.",
-      "proc_sketch_label": "Boceto · SINCHI", "proc_sketch_title": "Del boceto a la pieza", "proc_sketch_p": "El ópalo andino es la piedra protagonista de la Colección I. El panel geométrico frontal de SINCHI se dibuja a mano y luego se interpreta en materiales nobles — tejido, estructurado y rematado en plata 950.",
+      "proc_sketch_label": "Boceto · ILLARI", "proc_sketch_title": "Del boceto a la pieza", "proc_sketch_p": "El ópalo andino es la piedra protagonista de la Colección I. La flor de dieciséis pétalos de ILLARI se dibuja a mano y luego se interpreta en materiales nobles — Baby Suri Alpaca, un asa de cuero trenzada a mano y once ópalos andinos montados en plata 950.",
       "proc_mats_title": "Leído del boceto", "proc_mats_p": "Las anotaciones del dibujo se convierten en la ficha técnica de cada pieza terminada.",
-      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "≈61% Baby Suri alpaca, 29% lana, 10% nylon — por su suavidad y elegancia natural.",
+      "proc_m_alpaca_t": "Baby Suri alpaca", "proc_m_alpaca_p": "68% Baby Suri alpaca, 29% lana, 3% nylon — por su suavidad y elegancia natural.",
       "proc_m_silver_t": "Plata 950", "proc_m_silver_p": "Detalles en plata peruana y la placa de la marca.",
       "proc_m_telar_t": "Telar", "proc_m_telar_p": "Tejido a mano por artesanos peruanos; cada diseño exclusivo de la colección.",
       "proc_m_hide_t": "Piel de alpaca", "proc_m_hide_p": "Solo en detalles artesanales, de alpacas fallecidas de forma natural durante su vejez.",
       "proc_m_cow_t": "Cuero vacuno", "proc_m_cow_p": "Estructural — resistencia, confort y durabilidad.",
       "proc_m_pockets_t": "Interior", "proc_m_pockets_p": "Un bolsillo con cierre de nylon y dos bolsillos abiertos forrados en alpaca.",
-      "proc_gallery_title": "Bocetos del atelier", "proc_gallery_p": "Un boceto por cada pieza de la colección.",
       "artp_title": "Artesanos", "artp_desc": "Ésta no es una página sobre producción. Es un homenaje a las personas cuyas manos dan vida a cada pieza de INTIARA.",
       "art_quote": "El lujo empieza por las manos que lo crean.",
       "art_body_t": "En honor a las manos", "art_body_p1": "Detrás de cada pieza de INTIARA hay personas — maestros artesanos peruanos que trabajan con paciencia, cuidado y orgullo, preservando un saber que se transmite de una generación a otra.", "art_body_p2": "No hablamos de producción. Hablamos de dedicación, de tiempo y del respeto silencioso que merece una pieza cuando está verdaderamente hecha a mano. A ellos, nuestra más profunda gratitud.",

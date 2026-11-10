@@ -2,7 +2,7 @@
 /* Content (products, materials, EN/ES copy, settings) is loaded from
    content/content.json so it can be edited from the /admin panel. */
 
-var PRODUCTS=[], MATERIALS=[], I18N={en:{},es:{}}, SITE={};
+var PRODUCTS=[], MATERIALS=[], COLOURS=[], I18N={en:{},es:{}}, SITE={};
 
 var lang='en',cart=[],currentFilter='all';
 var euro=function(n){var s=(SITE&&SITE.currencySymbol)||'€';return s+Math.round(n);};
@@ -23,7 +23,7 @@ function loadContent(){
   return fetch('content/content.json?ts='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
     .then(function(d){
-      PRODUCTS=d.products||[];MATERIALS=d.materials||[];
+      PRODUCTS=d.products||[];MATERIALS=d.materials||[];COLOURS=d.colours||[];
       I18N=d.copy||{en:{},es:{}};SITE=d.site||{};
     })
     .catch(function(e){console.error('INTIARA: could not load content.json',e);});
@@ -114,20 +114,22 @@ function renderMaterials(id){
 function renderProductDetail(){
   var id=qparam('id')||(PRODUCTS[0]&&PRODUCTS[0].id);var p=findP(id);if(!p)p=PRODUCTS[0];if(!p)return;currentProductId=p.id;
   document.title='INTIARA · '+p.name;
+  var cn=document.getElementById('canonical');if(cn)cn.href='https://intiara.com.pe/product.html?id='+encodeURIComponent(p.id);
+  var md=document.querySelector('meta[name="description"]');if(md&&L(p.desc))md.setAttribute('content',L(p.desc));
   var set=function(i,v){var el=document.getElementById(i);if(el)el.textContent=v;};
   set('pCat',p.cat[lang]||p.cat.en);set('pName',p.name);set('pPrice',euro(p.price));
-  var cw=document.getElementById('pColour');if(cw)cw.innerHTML='<span class="swatch" style="background:'+p.hex+'"></span>'+(p.colour[lang]||p.colour.es);
+  renderPalette(p);
   var pd=document.getElementById('pDesc');if(pd)pd.innerHTML=paras(L(p.long)||L(p.desc));
   var det=document.getElementById('pDetails');
   if(det){
-    var mats=lines(L(p.materialsList)),feats=lines(L(p.features)),dm=p.dims||{};
-    var dims=[['pd_w',dm.w],['pd_h',dm.h],['pd_d',dm.d],['pd_weight',dm.weight]].filter(function(r){return r[1];});
+    var mats=lines(L(p.materialsList)),feats=lines(L(p.features));
     det.innerHTML=(mats.length||feats.length)
       ? (mats.length?'<h4 class="pd-h">'+t('pd_materials')+'</h4>'+list(mats):'')
         +(feats.length?'<h4 class="pd-h">'+t('pd_design')+'</h4>'+list(feats):'')
-        +(dims.length?'<h4 class="pd-h">'+t('pd_dims')+'</h4><ul class="pd-list">'+dims.map(function(r){return '<li>'+t(r[0])+': '+escAttr(r[1])+'</li>';}).join('')+'</ul>':'')
       : '<p>'+t('acc_details_p')+'</p>';
   }
+  var craft=lines(L(p.craft)),ci=document.getElementById('pCraftItem');
+  if(ci){ci.style.display=craft.length?'':'none';document.getElementById('pCraft').innerHTML=list(craft);}
   var care=document.getElementById('pCare');if(care)care.innerHTML='<p class="pd-intro">'+t('care_intro')+'</p>'+list(lines(t('care_list')));
   var pq=document.getElementById('pQuote');if(pq){var q=p.quote?(p.quote[lang]||p.quote.en):'';pq.textContent=q;pq.style.display=q?'':'none';}
   var imgs=pImgs(p);
@@ -152,6 +154,24 @@ function renderProductDetail(){
   observeReveal();
 }
 var currentProductId=null;
+/* ---- colour palette: every piece can be ordered in any of the fabric colours ---- */
+var selColour={};  // product id -> index into COLOURS chosen on its page
+function colourOf(p){
+  var c=COLOURS[selColour[p.id]];
+  return c?{name:L(c.name),hex:c.hex}:{name:p.colour[lang]||p.colour.es,hex:p.hex};
+}
+function renderPalette(p){
+  if(selColour[p.id]==null)COLOURS.forEach(function(c,i){if(['en','es'].some(function(k){return (c.name[k]||'').toLowerCase()===((p.colour||{})[k]||'').toLowerCase();}))selColour[p.id]=i;});
+  var c=colourOf(p),cw=document.getElementById('pColour');
+  if(cw)cw.innerHTML='<span class="swatch" style="background:'+c.hex+'"></span>'+escAttr(c.name);
+  var pal=document.getElementById('pPalette');if(!pal)return;
+  pal.style.display=COLOURS.length?'':'none';
+  pal.innerHTML='<p class="pal-h">'+t('pd_colours')+'</p><div class="pal-row">'+COLOURS.map(function(k,i){
+    var nm=escAttr(L(k.name)),on=selColour[p.id]===i;
+    return '<button type="button" class="pal-sw'+(on?' on':'')+'" data-ci="'+i+'" title="'+nm+'" aria-label="'+nm+'" aria-pressed="'+on+'"><img src="'+escAttr(k.image)+'" alt="" loading="lazy"></button>';
+  }).join('')+'</div>';
+  pal.onclick=function(e){var b=e.target.closest('.pal-sw');if(!b)return;selColour[p.id]=+b.getAttribute('data-ci');renderPalette(p);};
+}
 
 /* ---- site images + links (from settings) ---- */
 function applySiteImages(){
@@ -195,7 +215,7 @@ function setLang(l){
 }
 
 /* ---- cart ---- */
-function addToCart(id){var p=findP(id);cart.push({name:p.name,meta:(p.cat[lang]||p.cat.en)+' · '+(p.colour[lang]||p.colour.es),price:p.price,hex:p.hex,img:(pImgs(p)[0]||'')});saveCart();renderCart();toast(t('toast_added'));openCart();}
+function addToCart(id){var p=findP(id);var c=colourOf(p);cart.push({name:p.name,meta:(p.cat[lang]||p.cat.en)+' · '+c.name,price:p.price,hex:c.hex,img:(pImgs(p)[0]||'')});saveCart();renderCart();toast(t('toast_added'));openCart();}
 function removeItem(i){cart.splice(i,1);saveCart();renderCart();}
 function cartTotal(){return cart.reduce(function(s,x){return s+x.price;},0);}
 function renderCart(){

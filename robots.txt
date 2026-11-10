@@ -5,3 +5,5 @@ Disallow: /admin.html
 Disallow: /showcase.html
 Disallow: /logo-options.html
 Disallow: /variations
+
+Sitemap: https://intiara.com.pe/sitemap.xml
