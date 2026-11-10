@@ -2,7 +2,7 @@
 /* Content (products, materials, EN/ES copy, settings) is loaded from
    content/content.json so it can be edited from the /admin panel. */
 
-var PRODUCTS=[], MATERIALS=[], COLOURS=[], I18N={en:{},es:{}}, SITE={};
+var PRODUCTS=[], MATERIALS=[], I18N={en:{},es:{}}, SITE={};
 
 var lang='en',cart=[],currentFilter='all';
 var euro=function(n){var s=(SITE&&SITE.currencySymbol)||'€';return s+Math.round(n);};
@@ -23,7 +23,7 @@ function loadContent(){
   return fetch('content/content.json?ts='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
     .then(function(d){
-      PRODUCTS=d.products||[];MATERIALS=d.materials||[];COLOURS=d.colours||[];
+      PRODUCTS=d.products||[];MATERIALS=d.materials||[];
       I18N=d.copy||{en:{},es:{}};SITE=d.site||{};
     })
     .catch(function(e){console.error('INTIARA: could not load content.json',e);});
@@ -118,7 +118,7 @@ function renderProductDetail(){
   var md=document.querySelector('meta[name="description"]');if(md&&L(p.desc))md.setAttribute('content',L(p.desc));
   var set=function(i,v){var el=document.getElementById(i);if(el)el.textContent=v;};
   set('pCat',p.cat[lang]||p.cat.en);set('pName',p.name);set('pPrice',euro(p.price));
-  renderPalette(p);
+  var cw=document.getElementById('pColour');if(cw)cw.innerHTML='<span class="swatch" style="background:'+p.hex+'"></span>'+(p.colour[lang]||p.colour.es);
   var pd=document.getElementById('pDesc');if(pd)pd.innerHTML=paras(L(p.long)||L(p.desc));
   var det=document.getElementById('pDetails');
   if(det){
@@ -154,24 +154,6 @@ function renderProductDetail(){
   observeReveal();
 }
 var currentProductId=null;
-/* ---- colour palette: every piece can be ordered in any of the fabric colours ---- */
-var selColour={};  // product id -> index into COLOURS chosen on its page
-function colourOf(p){
-  var c=COLOURS[selColour[p.id]];
-  return c?{name:L(c.name),hex:c.hex}:{name:p.colour[lang]||p.colour.es,hex:p.hex};
-}
-function renderPalette(p){
-  if(selColour[p.id]==null)COLOURS.forEach(function(c,i){if(['en','es'].some(function(k){return (c.name[k]||'').toLowerCase()===((p.colour||{})[k]||'').toLowerCase();}))selColour[p.id]=i;});
-  var c=colourOf(p),cw=document.getElementById('pColour');
-  if(cw)cw.innerHTML='<span class="swatch" style="background:'+c.hex+'"></span>'+escAttr(c.name);
-  var pal=document.getElementById('pPalette');if(!pal)return;
-  pal.style.display=COLOURS.length?'':'none';
-  pal.innerHTML='<p class="pal-h">'+t('pd_colours')+'</p><div class="pal-row">'+COLOURS.map(function(k,i){
-    var nm=escAttr(L(k.name)),on=selColour[p.id]===i;
-    return '<button type="button" class="pal-sw'+(on?' on':'')+'" data-ci="'+i+'" title="'+nm+'" aria-label="'+nm+'" aria-pressed="'+on+'"><img src="'+escAttr(k.image)+'" alt="" loading="lazy"></button>';
-  }).join('')+'</div>';
-  pal.onclick=function(e){var b=e.target.closest('.pal-sw');if(!b)return;selColour[p.id]=+b.getAttribute('data-ci');renderPalette(p);};
-}
 
 /* ---- site images + links (from settings) ---- */
 function applySiteImages(){
@@ -215,7 +197,7 @@ function setLang(l){
 }
 
 /* ---- cart ---- */
-function addToCart(id){var p=findP(id);var c=colourOf(p);cart.push({name:p.name,meta:(p.cat[lang]||p.cat.en)+' · '+c.name,price:p.price,hex:c.hex,img:(pImgs(p)[0]||'')});saveCart();renderCart();toast(t('toast_added'));openCart();}
+function addToCart(id){var p=findP(id);cart.push({name:p.name,meta:(p.cat[lang]||p.cat.en)+' · '+(p.colour[lang]||p.colour.es),price:p.price,hex:p.hex,img:(pImgs(p)[0]||'')});saveCart();renderCart();toast(t('toast_added'));openCart();}
 function removeItem(i){cart.splice(i,1);saveCart();renderCart();}
 function cartTotal(){return cart.reduce(function(s,x){return s+x.price;},0);}
 function renderCart(){
