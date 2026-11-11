@@ -232,6 +232,11 @@ var toastTimer;function toast(msg){var el=document.getElementById('toast');if(!e
 function observeReveal(){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});document.querySelectorAll('.reveal:not(.in)').forEach(function(el){io.observe(el);});}
 
 /* ---- init ---- */
+// subtle developer credit at the very bottom of every page's footer
+function injectCredit(){
+  var f=document.querySelectorAll('footer');f=f[f.length-1];if(!f||f.querySelector('.site-credit'))return;
+  var p=document.createElement('p');p.className='site-credit';p.innerHTML='<a href="https://raineylaguna.com/" target="_blank" rel="noopener" data-i18n="site_credit">Developed by RaineyLaguna</a>';f.appendChild(p);
+}
 function initINTIARA(){
   loadContent().then(function(){
     try{var sl=localStorage.getItem('intiara_lang');if(sl)lang=sl;var sc=localStorage.getItem('intiara_cart');if(sc)cart=JSON.parse(sc)||[];}catch(e){}
@@ -247,7 +252,7 @@ function initINTIARA(){
     var cf=document.getElementById('contactForm');if(cf)cf.onsubmit=sendContact;
     window.addEventListener('scroll',function(){var h=document.getElementById('hdr');if(h)h.classList.toggle('scrolled',window.scrollY>10);});
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCart();});
-    applySiteImages();applySiteLinks();injectWhatsApp();
+    applySiteImages();applySiteLinks();injectWhatsApp();injectCredit();
     setLang(lang);
     observeReveal();
   });

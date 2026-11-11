@@ -119,7 +119,7 @@ header#hdr .rail-tagline .rt2{display:block;font-size:10px;letter-spacing:.2em;t
 /* materials */
 .mat{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-top:1px solid var(--line)}
 .mat:last-of-type{border-bottom:1px solid var(--line)}
-.mat .mphoto{aspect-ratio:5/4}
+.mat .mphoto{aspect-ratio:5/4;width:100%}
 .mat .mbody{padding:60px 64px;display:flex;flex-direction:column;justify-content:center}
 .mat:nth-child(even) .mphoto{order:2}
 .mat .mnum{font-family:var(--ser);font-style:italic;font-size:18px;color:var(--gold)}
@@ -332,3 +332,6 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
   .values-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
 }
+html body footer p.site-credit{text-transform:none;text-align:center;font-size:11px;letter-spacing:.08em;color:inherit;opacity:.38;margin:0;padding:18px 16px 14px}
+html body footer p.site-credit a{color:inherit;text-decoration:none;transition:opacity .2s}
+html body footer p.site-credit a:hover{text-decoration:underline;text-underline-offset:3px}
