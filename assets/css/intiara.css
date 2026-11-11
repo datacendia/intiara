@@ -332,6 +332,7 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
   .values-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
 }
-html body footer p.site-credit{text-transform:none;text-align:center;font-size:11px;letter-spacing:.08em;color:inherit;opacity:.38;margin:0;padding:18px 16px 14px}
+html body footer{position:relative}
+html body footer p.site-credit{position:absolute;right:26px;bottom:6px;white-space:nowrap;text-align:right;text-transform:none;font-size:10px;letter-spacing:.06em;line-height:14px;color:inherit;opacity:.45;margin:0;padding:0}
 html body footer p.site-credit a{color:inherit;text-decoration:none;transition:opacity .2s}
 html body footer p.site-credit a:hover{text-decoration:underline;text-underline-offset:3px}
