@@ -39,7 +39,7 @@ function injectChrome(){
    +'<div class="drawer-body" id="cartBody"></div>'
    +'<div class="drawer-foot"><div class="tot"><span class="eyebrow" data-i18n="cart_subtotal">Subtotal</span><span class="t" id="cartTotal">€0</span></div>'
    +'<button class="btn btn-fill" id="cartCheckout" data-i18n="cart_checkout">Checkout</button>'
-   +'<p class="ship-note" data-i18n="cart_ship">Complimentary worldwide shipping</p></div></aside>'
+   +'<p class="ship-note" data-i18n="cart_ship">Shipping cost confirmed with your order</p></div></aside>'
    +'<div class="toast" id="toast"></div>';
   var d=document.createElement('div');d.innerHTML=html;document.body.appendChild(d);
   document.getElementById('overlay').onclick=closeCart;

@@ -267,7 +267,7 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
 .greca-watermark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:210px;height:242px;background:var(--choco);opacity:.12;-webkit-mask:url(../img/greca.svg) center/contain no-repeat;mask:url(../img/greca.svg) center/contain no-repeat;z-index:1;pointer-events:none}
 
 /* ===== collection showcase (interactive) ===== */
-.col-group{aspect-ratio:16/8;border:1px solid var(--line);margin-bottom:12px}
+.col-group{aspect-ratio:3/2;border:1px solid var(--line);margin-bottom:12px}
 .col-group-cap{text-align:center;font-family:var(--ser);font-style:italic;font-size:16px;color:var(--mut);margin-bottom:60px}
 .col-explorer{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
 .col-tabs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
@@ -286,7 +286,7 @@ footer p.fp{font-size:14px;color:rgba(246,243,234,.5);max-width:300px;margin-top
 .col-view .cv-price{font-family:var(--ser);font-size:19px;margin-bottom:22px}
 .col-view .cv-actions{display:flex;gap:14px;flex-wrap:wrap}
 @media(max-width:1100px){.col-explorer{grid-template-columns:1fr;gap:34px}.col-view{grid-template-columns:1fr}}
-@media(max-width:640px){.col-group{aspect-ratio:4/3}}
+@media(max-width:640px){.col-group{aspect-ratio:3/2}}
 
 /* product detail quote */
 .pdp-info .pquote{font-family:var(--ser);font-style:italic;font-size:19px;color:var(--choco);line-height:1.5;margin:0 0 20px;padding-left:16px;border-left:2px solid var(--gold);max-width:460px}
