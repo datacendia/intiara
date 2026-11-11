@@ -160,6 +160,13 @@ header#hdr .rail-tagline .rt2{display:block;font-size:10px;letter-spacing:.2em;t
 .pdp-info .price{font-size:21px;margin-bottom:6px;font-family:var(--ser)}
 .pdp-info .colourway{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin-bottom:26px}
 .pdp-info .colourway .swatch{width:11px;height:11px}
+.pdp-info .palette{margin:-12px 0 28px}
+.pal-h{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:0 0 10px}
+.pal-row{display:flex;flex-wrap:wrap;gap:12px}
+.pal-sw{width:60px;height:60px;padding:3px;border-radius:50%;border:1px solid var(--line-2);background:none;cursor:pointer;transition:border-color .2s}
+.pal-sw img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.pal-sw:hover{border-color:var(--ink-2)}
+.pal-sw.on{border-color:var(--dorado);box-shadow:0 0 0 1px var(--dorado)}
 .pdp-info .desc{color:var(--ink-2);line-height:1.95;margin-bottom:30px;max-width:460px;font-family:var(--ser);font-size:17px}
 .pdp-info .btn{width:100%;justify-content:center;margin-bottom:14px}
 .pdp-note{font-size:11px;letter-spacing:.08em;color:var(--ink-2);text-align:center;margin-bottom:34px}
